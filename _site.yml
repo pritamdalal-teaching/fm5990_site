@@ -1,0 +1,10 @@
+
+name: "fm5990-website"
+output_dir: "."
+navbar:
+  title: "FM 5990 Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
