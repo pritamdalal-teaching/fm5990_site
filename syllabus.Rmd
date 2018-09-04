@@ -1,7 +1,5 @@
 ---
-title: "Syllabus FM 5990"
-author: "Instructor: Pritam Dalal"
-date: "Fall 2008"
+title: "Syllabus"
 output: html_document
 ---
 
@@ -9,87 +7,54 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+&nbsp;
+
 ### Course Overview
-The purpose of this course is to introduce the R and Python programming languages as computing tools of data science. The first half of the course will focus on R, the second half will focus on Python.  This class is for the Master of Financial Mathematics program, therefore all in-class examples and homework assignments will involve financial data.
+The purpose of this course is to introduce the R and Python programming languages as computing tools for data science. The first half of the course will focus on R, the second half will focus on Python.  This class is for the Master of Financial Mathematics program, therefore all in-class examples and homework assignments will involve financial data.
 
-I will teach the course assuming that that students have no programming background. However, I am in no way attempting to be a comprehensive introduction to programming.  Rather, I have amasses a set of analyses (or analysis-related exercises) I want all the student to complete, and I am simply going to introduce any programming concepts that will be needed.
+I will teach the course assuming that that students have no programming background. However, this course is not intended to be a proper introduction to programming.  Rather, I will introduce programming topics as they are needed to perform analysis.
 
-I have designed the course so that students with strong programming skills will also find the material valuable.  Students who need to spend less time working on the foundational programming skill, can spend more time digging into the rich financial data sets that we will have at our disposal.
+I have designed the course so that students with strong programming skills will also find the material valuable.  Those who need to spend less time working on the foundational programming skills can spend more time digging into the rich financial data sets that we will have at our disposal.
 
+&nbsp;
 
 ### Materials
 Students are expected to have a computer capable of running the latest versions of R, R Studio, and the Anaconda distribution.  All this software is free.  I will assign a variety of reading throughout the semester - all of it will be freely available online. 
 
+Here are some of the online resources we will use:
+
+*R for Data Science* - Hadley Wickham
+
+*Advanced R* - Hadley Wickham
+
+*Purrr Tutorial* - Jenny Bryan
+
+&nbsp;
 
 ### Homework
-This is a pass/fail course, so I am going to assign homeworks largely for your benefit - so that you can get practice and feedback.  Homework is a product that you are paying for, and grading is a service that you are paying for.  I'm going to keep my end of the bargain, but you have to keep your end.  In that vein, late homework assignments will not be accepted.
+This is a pass/fail course, so I am going to assign homeworks largely for your benefit.  The homework serves two purposes: practice and feedback.  
 
-The T.A. and I are going provide these, respectively.
+For any course, but especially a pass/fail course, the homework is a product that you are paying for, and the grading is a service that you are paying for.  I'm going to keep my end of the bargain, but you have to keep your end.  In that vein, late homework assignments will not be accepted.
+
 
 Homework will be turned in through Github.  This is for convenience, and is also a way to force you to learn about version control.
 
-###
+&nbsp;
 
+### Projects
+There will be two analysis projects.  One at the end of the R section and one at the end of the Python section.  This the first offering of the course, so I need to see how student do over the next couple of weeks to get a sense for the scope of the projects.  I intend to be flexible with this, and I would like you to be able to work on a project that is of interest to you.
+
+Wolverine trading has provided some analysis problems, so student are welcome to work on those, or something else of their own choosing.
+
+
+&nbsp;
 
 ### Grading
-This is an elective pass/fail course.  As such, I am not particularly concerned about assessing your skills.  Rather, I get to focus on providing you with valuable knowledge and skills.  But I will give you problems to work on, and to to turn in, as the feedback you get from the graders will be useful to you.
+This is an elective pass/fail course.  
 
-There will be two projects at the end of each section, one on R and one on Python.
+The determination of pass/fail will be largely based on the two analysis projects.
 
-### Academic Integrity
+Homeworks will be grade to provide feeback to the students.
 
-
-
-## Weekly Course Plan
-
-### Part 1: R & RStudio
-
-**Week 1 - Preliminaries**
-
-We'll do the usual first class housekeeping including walking though the syllabus.  Then, we'll make sure that everyone has R & R Studio installed.  And then there is going to be a smattering of introductory programming material: files, directories, paths, vectore, dataframes, the tidyverse, reading in data from a CSV, subsetting a dataframe, basic dplyr functionality.  We'll end the class by introducing options contracts.
-
-*Assignment:*
-
-- Read chapter 5 of R4DS - you should type out all the examples along with him.
-
-- Open a GitHub account.
-
-- Complete the Software Carpentry Lesson on Git and GitHub
-
-**Week 2 - Data Manipulation** 
-
-This week will be focused on gaining proficiency the data manipulation functions of dplyr with: filter(), arrange(), select(), mutate(), groupby(), summarize().  We will then put all these together the pipe operator.  We will also discuss more about options.
-
-<!-- A brief history of R and why it’s used in data science.  Introduction to R: data types and syntax.  Various ways to run R code: interactive command line, scripts, notebooks.   Reading in data from external data sources. Basics of options. -->
-
-<!-- IDEA: a simple visualization of the difference between calendar days and business days. I won't have them graph made up data, but this will be a nice opportunity for them to tell a little story with data and a visualization. -->
-
-
-**Week 3 - Functions and Iteration**   
-
-You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will go through a variety of functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops, iterating with the tidyverse purrr() package.
-
-**Week 4 - DataViz 1** 
-
-Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
-
-<!-- Some statics such as linear regression and PCA.  -->
-
-**Week 5 - DataViz 2 & Project Assignment **
-More data visualization and the R project with be assigned.
-
-
-**Week 6**
-
-We will us this class in whatever way we see best fit.  We may use it to cover material we didn't get to or new material that comes up.  We may use it as an opportunity to discuss the projects.  If we are all caught up, I may try to invite a data science practitioner about  
-
-
-**Week 7 - Project Presentations**
-
-We will present our group projects.  If there is time remaining we will start with Python.
-
-
-
-
-
+&nbsp;
 

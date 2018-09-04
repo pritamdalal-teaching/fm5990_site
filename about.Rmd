@@ -1,9 +1,0 @@
----
-title: "About This Course"
----
-
-This is an introductory treatment of R and Python applied to data science in finance.
-
-This is your instructor:
-
-![](John_Conklin_6_crop.jpg)

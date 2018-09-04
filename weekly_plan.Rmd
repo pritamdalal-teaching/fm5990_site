@@ -1,0 +1,77 @@
+---
+title: "Weekly Plan"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This will serve as a rough guide for the course schedule.  I reserve right to change things as required.
+
+&nbsp;
+
+### Part 1: R & RStudio
+
+**Week 1 - Preliminaries**
+
+We'll do the usual first class housekeeping including walking though the syllabus.  We'll also make sure that everyone has R & R Studio installed.  After that, we'll start discussing material material: files, directories, paths, touch-typing, keyboard shortcuts, vectors, dataframes, reading in data from a CSV, dataframe slicing.  We'll end the class by introducing options contracts.
+
+*Assignment:*
+
+- Read chapter 5 of *R For Data Science* - **you should type out all the examples along with him**.
+
+- Open a GitHub account.
+
+- Complete the Software Carpentry Lesson on Git and GitHub:
+http://swcarpentry.github.io/git-novice/
+
+- Google around and find a short introduction to options.  Read it.  We will amass a list of the good ones in class and I will post them in the Self-Study section of the course website.
+
+&nbsp;
+
+**Week 2 - Data Manipulation** 
+
+This week will be focused on gaining proficiency the data manipulation functions of dplyr with: filter(), arrange(), select(), mutate(), groupby(), summarize().  We will then put all these together with the pipe operator.  We will also discuss options further.
+
+<!-- A brief history of R and why it’s used in data science.  Introduction to R: data types and syntax.  Various ways to run R code: interactive command line, scripts, notebooks.   Reading in data from external data sources. Basics of options. -->
+
+<!-- IDEA: a simple visualization of the difference between calendar days and business days. I won't have them graph made up data, but this will be a nice opportunity for them to tell a little story with data and a visualization. -->
+
+&nbsp;
+
+**Week 3 - Functions and Iteration**   
+
+You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will write a variety of example functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops and also iterating with the tidyverse **purrr** package.
+
+&nbsp;
+
+**Week 4 - DataViz 1** 
+
+Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
+
+<!-- Some statics such as linear regression and PCA.  -->
+
+&nbsp;
+
+**Week 5 - DataViz 2 & Project Assignment **
+
+More data visualization and the R data analysis project with be assigned.
+
+&nbsp;
+
+**Week 6 - Place Holder**
+
+We will us this class in whatever way is needed at the time.  We may use it to cover material we didn't get to or new material that comes up.  I may use it as an office hour to answer questions about the project.  If we are all caught up, I may invite a data science practitioner to discuss their work.
+
+&nbsp;
+
+**Week 7 - Project Presentations**
+
+We will the group projects.  If there is time remaining we will start with Python.
+
+
+
+
+
+

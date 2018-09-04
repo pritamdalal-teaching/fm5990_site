@@ -2,12 +2,16 @@
 name: "fm5990-website"
 output_dir: "."
 navbar:
-  title: "FM 5990 Website"
+  title: "FM 5990"
   left:
     - text: "Home"
       href: index.html
-    - text: "About Me"
-      href: about.html
+    - text: "Instructor"
+      href: instructor.html
+    - text: "Syllabus"
+      href: syllabus.html
+    - text: "Weekly Plan"
+      href: weekly_plan.html
 output:
   html_document:
     theme: flatly
