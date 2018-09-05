@@ -1,0 +1,11 @@
+---
+title: "Slides"
+---
+
+[01 - FM 5990 Preview](slides_01_fm_5990_preview.pdf)
+
+[02 - Installing R and RStudio](slides_02_installing_r_and_rstudio.pdf)
+
+[03 - Preliminaries](slides_03_preliminaries.pdf)
+
+[04 - Options Part 1](slides_04_options_1.pdf)
