@@ -11,7 +11,7 @@
 
 
 
-<title>Slides</title>
+<title>Data</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -217,15 +217,36 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Slides</h1>
+<h1 class="title toc-ignore">Data</h1>
 
 </div>
 
 
-<p><a href="slides_01_fm_5990_preview.pdf">01 - FM 5990 Preview</a></p>
-<p><a href="slides_02_installing_r_and_rstudio.pdf">02 - Installing R and RStudio</a></p>
-<p><a href="slides_03_preliminaries.pdf">03 - Preliminaries</a></p>
-<p><a href="slides_04_options_1.pdf">04 - Options Part 1</a></p>
+<p>This page will contain that data that we use for in-class examples.</p>
+<p>Along with the data, I will post exercises for you to complete as a way to practice programming and explore the data. I won’t necessarily go over all of techniques required, so if you don’t understand something you may have to use Google.</p>
+<p>Google is your friend.</p>
+<p> </p>
+<div id="options-intro" class="section level3">
+<h3>Options Intro</h3>
+<p><a href="data_options_intro.csv">Options Intro</a> - this is a small sample of the Delta Neutral historical options data. It is end-of-day prices of all the out-of-the-money options for several liquid index ETFs, for one particular expiration, on one particular trading day.</p>
+<p><strong>Exercises:</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Read in this data set using <code>readr::read_csv()</code>. Load it into a dataframe called <code>df_options_intro</code>.</p></li>
+<li><p>Prove to yourself that this code will work weather you use <code>readr::read_csv()</code> or simply <code>read_csv()</code>. Why might you want to use one versus the other?</p></li>
+<li><p>Use <code>$</code> notation to grab the <code>strike</code> column and print it to the console. Do the same for <code>implied_vol</code> as well as <code>ask_price</code>.</p></li>
+<li><p>Use <code>nrow()</code> to determine how many rows are in <code>df_options_intro</code>.</p></li>
+<li><p>Take a look at <code>df_options_intro</code> using <code>View()</code>. Confirm that <code>nrow()</code> produced the correct value.</p></li>
+<li><p>What is the expiration date of all the options? Which date are these prices from?</p></li>
+<li><p>Use <code>dplyr::distinct()</code> to determine how many different underlyings are represented in the data. What are they?</p></li>
+<li><p>Use <code>dplyr::filter()</code> along with variable assignment <code>&lt;-</code> to create four sub-dataframes, each of which consists of all of the options for one underlying. Call these dataframes <code>df_SPY</code>, <code>df_QQQ</code>, <code>df_IWM</code>, <code>df_DIA</code>. (For each iteration, type out the code from scratch. This will be good typing practice that will make you more efficient in the future.)</p></li>
+<li><p>For each of the underlyings, use <code>ggplot2::qplot()</code> to create a line graph with <code>strike</code> on the x-axis and <code>implied_vol</code> on the y-axis.</p></li>
+<li><p>What is the relationship between <code>strike</code> and <code>implied_vol</code> for these underlyings?</p></li>
+<li><p>Let’s break down <code>df_SPY</code> a little further. Using <code>dplyr::filter()</code> create two sub-dataframes, one consisting of all the puts and one consisting of all the calls. Label them <code>df_SPY_puts</code> and <code>df_SPY_calls</code>, respectively.</p></li>
+<li><p>How many puts are there? How many calls are there? What are there so many more puts? (Hint: remember that options are insurance contracts and that SPY is an ETF that tracks the S&amp;P 500.)</p></li>
+<li><p>For both <code>df_SPY_calls</code> and <code>df_SPY_puts</code> create a graph with <code>strike</code> on x-axis and <code>bid_price</code>.</p></li>
+<li><p>Based on the graphs you created above: for puts, what is the relationship between strike and price, assuming we hold the price of the underlying fixed? How about for calls?</p></li>
+</ol>
+</div>
 
 
 

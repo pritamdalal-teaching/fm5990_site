@@ -1,0 +1,47 @@
+---
+title: "Data"
+output: html_document
+---
+
+This page will contain that data that we use for in-class examples.
+
+Along with the data, I will post exercises for you to complete as a way to practice programming and explore the data.  I won't necessarily go over all of techniques required, so if you don't understand something you may have to use Google. 
+
+Google is your friend.
+
+&nbsp;
+
+### Options Intro
+
+[Options Intro](data_options_intro.csv) - this is a small sample of the Delta Neutral historical options data.  It is end-of-day prices of all the out-of-the-money options for several liquid index ETFs, for one particular expiration, on one particular trading day.
+
+**Exercises:**
+
+1. Read in this data set using `readr::read_csv()`.  Load it into a dataframe called `df_options_intro`.
+
+1. Prove to yourself that this code will work weather you use `readr::read_csv()` or simply `read_csv()`.  Why might you want to use one versus the other?
+
+1. Use `$` notation to grab the `strike` column and print it to the console.  Do the same for `implied_vol` as well as `ask_price`.
+
+1. Use `nrow()` to determine how many rows are in `df_options_intro`.
+
+1. Take a look at `df_options_intro` using `View()`.  Confirm that `nrow()` produced the correct value.  
+
+1. What is the expiration date of all the options?  Which date are these prices from?
+
+1. Use `dplyr::distinct()` to determine how many different underlyings are represented in the data.  What are they?
+
+1. Use `dplyr::filter()` along with variable assignment `<-` to create four sub-dataframes, each of which consists of all of the options for one underlying.  Call these dataframes `df_SPY`, `df_QQQ`, `df_IWM`, `df_DIA`.  (For each iteration, type out the code from scratch. This will be good typing practice that will make you more efficient in the future.)
+
+1. For each of the underlyings, use `ggplot2::qplot()` to create a line graph with `strike` on the x-axis and `implied_vol` on the y-axis.
+
+1. What is the relationship between `strike` and `implied_vol` for these underlyings?
+
+1. Let's break down `df_SPY` a little further.  Using `dplyr::filter()` create two sub-dataframes, one consisting of all the puts and one consisting of all the calls.  Label them `df_SPY_puts` and `df_SPY_calls`, respectively.
+
+1. How many puts are there? How many calls are there?  What are there so many more puts? (Hint: remember that options are insurance contracts and that SPY is an ETF that tracks the S&P 500.)
+
+1. For both `df_SPY_calls` and `df_SPY_puts` create a graph with `strike` on x-axis and `bid_price`.  
+
+1. Based on the graphs you created above: for puts, what is the relationship between strike and price, assuming we hold the price of the underlying fixed?  How about for calls? 
+
