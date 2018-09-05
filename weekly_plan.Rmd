@@ -17,7 +17,7 @@ This will serve as a rough guide for the course schedule.  I reserve right to ch
 
 We'll do the usual first class housekeeping including walking though the syllabus.  We'll also make sure that everyone has R & R Studio installed.  After that, we'll start discussing material material: files, directories, paths, touch-typing, keyboard shortcuts, vectors, dataframes, reading in data from a CSV, dataframe slicing.  We'll end the class by introducing options contracts.
 
-*Assignment:*
+*Assignment:* (Note: nothing to turn in)
 
 - Read chapter 5 of *R For Data Science* - **you should type out all the examples along with him**.
 

@@ -20,7 +20,6 @@ Ameya Phadke
 
 phadk019@umn.edu
 
-github:
+github: phadk019
 
-office hours:
-<!-- ![](John_Conklin_6_crop.jpg) -->
+office hours: Friday 3p-5p Vincent 120

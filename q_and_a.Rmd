@@ -1,0 +1,44 @@
+---
+title: "Q & A"
+output: html_document
+---
+
+If a question comes up that I think would be worth answering for the entire class then I will post the answer here.
+
+&nbsp;
+
+#### 9/5/2018
+When working with dataframes, the `$` notation can be combined with the `[]` notation.  In order for this code to run, `options_data.csv` needs to be in your working directory.
+
+```{r message=FALSE, include=TRUE}
+library(readr)
+df_options <- read_csv("options_data.csv")
+```
+
+```{r}
+df_options$strike[3:6]
+```
+
+Describe in word what this code is doing relative to `df_options_data`.
+
+&nbsp;
+
+#### 9/4/2018
+There was a piece of bad code in the subsetting tutorial.
+
+```{r}
+##> df_options$(strike:implied_vol)
+```
+
+If you run this code you will get an error that reads:
+
+
+
+<center>
+`Error: unexpected '(' in "df_options$("`
+</center>
+\ 
+
+I thought that there was a way to use the `$` to select a range of columns, but that's not the case.  The `$` notation is intended to select one column at a time.
+
+There are ways to select multiple columns of a dataframe in `base` R, but they are all messy and I don't recommend them.  If you want to select multiple columns of a dataframe, use the `select()` function of the `dplyr` package.
