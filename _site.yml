@@ -11,7 +11,9 @@ navbar:
     - text: "Weekly Plan"
       href: weekly_plan.html
     - text: "Slides"
-      href: slides.html 
+      href: slides.html
+    - text: "Self-Study"
+      href: self_study.html
     - text: "Syllabus"
       href: syllabus.html
     - text: "Q & A"

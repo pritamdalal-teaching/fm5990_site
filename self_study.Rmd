@@ -1,0 +1,69 @@
+---
+title: "Self-Study"
+output: html_document
+---
+
+The ability to learn programming material on your own is an invaluable skill.  Experienced coders will often still Google things a few times a minute while working.  Get used to it - this is the life you have chosen.
+
+Here are some self-study resources for you to explore.
+
+&nbsp;
+
+#### Books
+
+[R for Data Science (r4ds) - Hadley Wickham](http://r4ds.had.co.nz/)
+
+[Advanced R - Hadley Wickham](https://adv-r.hadley.nz/)
+
+[R Packages - Hadley Wickham](http://r-pkgs.had.co.nz/)
+
+&nbsp;
+
+#### Tutorials
+
+[Jenny Bryan's Purr Tutorial](https://jennybc.github.io/purrr-tutorial/)
+
+[Hadley Wickham's List Tutorial](http://r4ds.had.co.nz/lists.html)
+
+
+&nbsp;
+
+#### Debugging in R
+
+[An Introduction to Interactive Debugging Tools in R - Roger Peng](R-debug-tools-roger-peng.pdf) 
+
+&nbsp;
+
+#### RStudio
+
+[RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+
+[RStudio Tips and Tricks Video](https://www.youtube.com/watch?v=kuSQgswZdr8)
+
+&nbsp;
+
+#### Articles
+
+[R vs Python](https://www.datacamp.com/community/tutorials/r-or-python-for-data-analysis)
+
+[Getting Started with R Packages](https://www.datacamp.com/community/tutorials/r-packages-guide)
+
+&nbsp;
+
+#### R as a Communication Tool
+R has many tools to facilitate written communication.  You can write PDF articles, author presentation slides, and create websites.  This website as well as all the slides for FM 5990 were created in R Studio.
+
+*Rmarkdown* is the foundation of R's vast capabilities as a communication tool.  It is an extension of *markdown*, which is a simple markup language. 
+
+[RStudio Rmarkdown Page](https://rmarkdown.rstudio.com/)
+
+[R Mardown Chapter of r4ds](http://r4ds.had.co.nz/r-markdown.html)
+
+
+&nbsp;
+
+#### Thought Leaders and Notable Figures
+
+[Hadley Wickham](http://hadley.nz/) -- works at R Studio started the Tidyverse.
+
+[Roger Peng](http://www.biostat.jhsph.edu/~rpeng/) -- an academic who has been writing about R for a long time.
