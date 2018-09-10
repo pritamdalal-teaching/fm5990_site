@@ -9,3 +9,6 @@ title: "Slides"
 [03 - Preliminaries](slides_03_preliminaries.pdf)
 
 [04 - Options Part 1](slides_04_options_1.pdf)
+
+[05 - Options Part 2](slides_05_options_2.pdf)
+
