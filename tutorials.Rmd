@@ -5,4 +5,6 @@ output: html_document
 
 &nbsp;
 
-[04 Dataframe Slicing](tutorial_04_dataframe_slicing.R) - basic dataframe slicing techniques performed on data_options_intro.csv using base R.
+[04 Dataframe Slicing](tutorial_04_dataframe_slicing.R) - basic dataframe slicing techniques performed on `data_options_intro.csv` using base R.
+
+[05 Volume Analysis with `dplyr`](tutorial_05_dplyr_volume_analysis.R) - an analysis of monthly volume by underlying performed on `data_occ_201808.csv` using the `dplyr` package from the tidyverse.

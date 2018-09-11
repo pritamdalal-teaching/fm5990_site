@@ -32,13 +32,27 @@ http://swcarpentry.github.io/git-novice/
 
 **Week 2 - Data Manipulation** 
 
-This week will be focused on gaining proficiency the data manipulation functions of dplyr with: filter(), arrange(), select(), mutate(), groupby(), summarize().  We will then put all these together with the pipe operator.  We will also discuss options further.
+This week will be focused on gaining proficiency the data manipulation functions of the tidyverse `dplyr` package.  Towards this end we will perform an analysis on volume data published by the OCC.  The `dplyr` functions that we cover are: `filter()`, `arrange()`, `select()`, `mutate()`, `groupby()`, `summarize()`.  We learn how to create elegant sequences of dplyr functions using the pipe operator.  To end the class we will continue our discussion of options.
 
 <!-- A brief history of R and why it’s used in data science.  Introduction to R: data types and syntax.  Various ways to run R code: interactive command line, scripts, notebooks.   Reading in data from external data sources. Basics of options. -->
 
 <!-- IDEA: a simple visualization of the difference between calendar days and business days. I won't have them graph made up data, but this will be a nice opportunity for them to tell a little story with data and a visualization. -->
 
+*Assignment:* (Note: nothing to turn in)
+
+- Read chapters 19, 20, and 21 of *R For Data Science* - **Type out all the examples and also work through the exercise.  If you get stuck on any of the problems, just move on after a reasonable amount of effort**.
+
+- Read the *Options Pricing* series of articles on Investopedia - https://www.investopedia.com/university/options-pricing/.  Or find something on your own and share with the class.
+
+- Read Sections 1 - 3.4 of the the wikipedia article on Greeks: https://en.wikipedia.org/wiki/Greeks_(finance) . Don't read past section 3.4 (Theta).  None of the other greeks matter.
+
+- Complete the exercises for the *Options Intro* data set in the Data section of the website.
+
+- The items above should keep you busy for a while. I will post additional Data sets and problems during the week, so check back on the website for those later this week.
+
 &nbsp;
+
+
 
 **Week 3 - Functions and Iteration**   
 

@@ -1,41 +1,16 @@
-#########################
-## Using this Tutorial ##
-#########################
-# 1. Start a new R session.
+##############################
+## How to Use this Tutorial ##
+##############################
+# 1. Open this .R file in a new RStudio session and save it on your
+#    Desktop.
 
-# 2. Create a new R script file via File > New File > R Script. 
+# 2. Use the setwd() function to change the working directory of 
+#    your RStudio session to your Desktop.
 
-# 3. Go to the Tutorials section of the course website.  Copy the
-#    contents of "04 Dataframe Slicing" and paste it into the file
-#    you just created.
+# 3. Go to the Data section of the class website and download the 
+#    data set called Options Intro.  Save data_options_intro.csv
+#    your Desktop. 
 
-# 4. Pritam will have guided you verbally to this point.  Now complete
-#    steps 5-8.
-
-# 5. Create a folder called dataframe-slicing on your Desktop. 
-
-# 6. Save the current R script as dataframe-slicing.R in the folder
-#    called dataframe-slicing that you created on your Desktop in 
-#    step 5.
-
-# 7. Wait for further instructions.
-
-
-
-##################
-## Getting Data ##
-##################
-# 1. Change the working directory in your R session to the dataframe-
-#    slicing folder on your Desktop.
-##> setwd("your folder path here")
-
-
-# 2. Go to the Data section of course website and click the link that
-#    Options Intro.  This will start a download of a file called
-#    data_options_intro.csv.
-
-# 3. Save data_options_intro.csv into the the folder on your desktop
-#    called dataframe-slicing.
 
 
 
