@@ -8,11 +8,11 @@ If a question comes up that I think would be worth answering for the entire clas
 &nbsp;
 
 #### 9/5/2018
-When working with dataframes, the `$` notation can be combined with the `[]` notation.  In order for this code to run, `options_data.csv` needs to be in your working directory.
+When working with dataframes, the `$` notation can be combined with the `[]` notation.  In order for this code to run, `data_options_intro.csv` needs to be in your working directory.
 
 ```{r message=FALSE, include=TRUE}
 library(readr)
-df_options <- read_csv("options_data.csv")
+df_options <- read_csv("data_options_intro.csv")
 ```
 
 ```{r}
