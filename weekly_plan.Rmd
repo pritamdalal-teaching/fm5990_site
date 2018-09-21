@@ -19,7 +19,7 @@ We'll do the usual first class housekeeping including walking though the syllabu
 
 *Assignment:* (Note: nothing to turn in)
 
-- Read chapter 5 of *R For Data Science* - **you should type out all the examples along with him**.
+- Read Chapter 5 ("Data Transformation"") of *R For Data Science* - **you should type out all the examples along with him**.
 
 - Open a GitHub account.
 
@@ -30,7 +30,7 @@ http://swcarpentry.github.io/git-novice/
 
 &nbsp;
 
-**Week 2 - Data Manipulation** 
+**Week 2 - Data Manipulation (1 of 2)** 
 
 This week will be focused on gaining proficiency the data manipulation functions of the tidyverse `dplyr` package.  Towards this end we will perform an analysis on volume data published by the OCC.  The `dplyr` functions that we cover are: `filter()`, `arrange()`, `select()`, `mutate()`, `groupby()`, `summarize()`.  We learn how to create elegant sequences of dplyr functions using the pipe operator.  To end the class we will continue our discussion of options.
 
@@ -40,7 +40,7 @@ This week will be focused on gaining proficiency the data manipulation functions
 
 *Assignment:* (Note: nothing to turn in)
 
-- Read chapters 19, 20, and 21 of *R For Data Science* - **Type out all the examples and also work through the exercise.  If you get stuck on any of the problems, just move on after a reasonable amount of effort**.
+- Read chapters 19 ("Functions"), 20 ("Vectors""), and 21 ("Iteration") of *R For Data Science* - **Type out all the examples and also work through the exercise.  If you get stuck on any of the problems, just move on after a reasonable amount of effort**.
 
 - Read the *Options Pricing* series of articles on Investopedia - https://www.investopedia.com/university/options-pricing/.  Or find something on your own and share with the class.
 
@@ -48,19 +48,40 @@ This week will be focused on gaining proficiency the data manipulation functions
 
 - Complete the exercises for the *Options Intro* data set in the Data section of the website.
 
-- The items above should keep you busy for a while. I will post additional Data sets and problems during the week, so check back on the website for those later this week.
+
+&nbsp;
+
+
+**Week 3 - Data Manipulation (2 of 2)** 
+
+This week we started by going over the Options Part 3 Slides, the discussion took longer that I anticipated but there was a lot of interest from the students in digging deeper into the finance material.  We ended the class by going over the dplyr tutorial again from start to finish, but only focusing on the essentials.  
+
+*Assignment:* 
+
+- Read and work through Chapter 3 ("Data Visualization"") and Chapter 18 ("Pipes"") of *R for Data Science*.  Note: the chapter numbers I give are from the online version of the book, they may be different for print versions. 
+
+
+- Work through Part 1 ("A Quick Refresher"") of the DataCamp tutorial on writing functions in R - https://www.datacamp.com/courses/writing-functions-in-r.   The first section of the tutorial is free, but you have to pay to get access to the rest of the material.  Paying for the rest of the material is not required, but this will be a good introduction to a reputatable online data science education platform.
+
+
+- Read and work through the "Data Structures", "Subsetting", and "Functions" chapters of *Advanced R* (all three can be can be found under the **Foundations** section).  As the title suggests, this book is more advanced so if you feel overwhelmed don't worry.  If you feel totally lost, you can simply focus on other material.  But as I always say, if you can type along with the examples and generate the same results with some understanding of what is going on, you are making progress. 
+
+
+- Complete the exercises for the *OCC Volume Report* data set.
+
 
 &nbsp;
 
 
 
-**Week 3 - Functions and Iteration**   
+**Week 4 - Functions and Iteration**   
 
 You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will write a variety of example functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops and also iterating with the tidyverse **purrr** package.
 
 &nbsp;
 
-**Week 4 - DataViz 1** 
+
+**Week 5 - DataViz 1 & Project Assignment** 
 
 Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
 
@@ -68,15 +89,10 @@ Data Visualization with ggplot2().  An introduction to some of the most popular 
 
 &nbsp;
 
-**Week 5 - DataViz 2 & Project Assignment **
+**Week 6 - DataViz 2 **
 
 More data visualization and the R data analysis project with be assigned.
 
-&nbsp;
-
-**Week 6 - Place Holder**
-
-We will us this class in whatever way is needed at the time.  We may use it to cover material we didn't get to or new material that comes up.  I may use it as an office hour to answer questions about the project.  If we are all caught up, I may invite a data science practitioner to discuss their work.
 
 &nbsp;
 

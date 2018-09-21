@@ -12,7 +12,13 @@ This site is a work in progress - thank you in advance for your patience.
 
 #### Announcements
 
-#### 9/10/2018
+##### 9/21/2018
+
+- Assignment for 9/25/2018 has been posted in the Weekly Plan Section.
+
+- The *Options Part 3* slide presentation has been posted.
+
+##### 9/10/2018
 
 - Added a Tutorials section which will contain lessons in the form of R scripts or R markdown files.  These are designed to be read and that you can worked through on your own.  We will also work through many of these in class together.
 
