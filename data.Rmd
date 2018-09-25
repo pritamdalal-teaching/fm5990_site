@@ -83,3 +83,14 @@ The purpose of this set of exercises is to perform a bit more volume analysis on
 1. How many distinct `segments` are represented by the `df_top_100` symbols?
 
 1. **Open-Ended Bonus:** come up with a way to group this distinct segments.   Aim for 5-10 groupings.
+
+
+&nbsp;
+
+### Option History Practice
+
+These are small samples of the types of data that we will be performing backtesting on.
+
+[Market History Practice](data_practice_market_history.csv) - all OTM options from one month before expiration, until expiration.
+
+[Option History Practice](data_practice_option_history.csv) - all subsequent settle prices for any option that shows up in the market history.

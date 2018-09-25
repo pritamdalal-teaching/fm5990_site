@@ -74,14 +74,27 @@ This week we started by going over the Options Part 3 Slides, the discussion too
 
 
 
-**Week 4 - Functions and Iteration**   
+**Week 4 - R Markdown**   
 
-You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will write a variety of example functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops and also iterating with the tidyverse **purrr** package.
+First I'd like to get a sense of how the reading assignments and programming exercises are going for the students.  Then we'll introduce the concept of R Markdown, which is the backbone of R's extensive authoring capabilities. To end the class we'll explore the *Options History Practice* within an `.Rmd` notebook.  
+
+*Assignment:* 
+
+- Read and workthrough the **Communicate** section of R4DS.  In the online verison of the book this is Chapters 26-30, they are about various aspects of R Markdown.
+
+- Complete all exercises for **Option History Practice** data set.
 
 &nbsp;
 
 
-**Week 5 - DataViz 1 & Project Assignment** 
+**Week 5 - Functions and Iteration**   
+
+You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will write a variety of example functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops and also iterating with the tidyverse **purrr** package.
+
+
+
+
+**Week 6 - DataViz 1 & Project Assignment** 
 
 Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
 
@@ -89,14 +102,14 @@ Data Visualization with ggplot2().  An introduction to some of the most popular 
 
 &nbsp;
 
-**Week 6 - DataViz 2 **
+**Week 7 - DataViz 2 **
 
 More data visualization and the R data analysis project with be assigned.
 
 
 &nbsp;
 
-**Week 7 - Project Presentations**
+**Week 8 - Project Presentations**
 
 We will the group projects.  If there is time remaining we will start with Python.
 
