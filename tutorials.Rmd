@@ -9,4 +9,11 @@ output: html_document
 
 [05 Volume Analysis with `dplyr`](tutorial_05_dplyr_volume_analysis.R) - an analysis of monthly volume by underlying performed on `data_occ_201808.csv` using the `dplyr` package from the tidyverse.
 
-[06 Introduction to R Markdown](tutorial_06_r_markdown_introduction.Rmd) - this is a basic introduction to R Markdown.
+[06 Introduction to R Markdown](tutorial_06_r_markdown_introduction.Rmd) - this is a basic introduction to R Markdown.  For some reason the YAML header goes missing when I upload the file to the website.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 06 - Introduction to R Markdown"
+author: "Pritam Dalal"
+output: html_document
+---
+```
