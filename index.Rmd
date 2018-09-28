@@ -12,6 +12,9 @@ This site is a work in progress - thank you in advance for your patience.
 
 #### Announcements
 
+##### 9/28/2018
+- Posted a set of exercises for *Option History Practice*.  It's an R Markdown notebook, so enjoy.
+
 ##### 9/25/2018
 
 - Posted a new data set called *Option History Practice* - there will be exercises posted for this data in the next day or two.

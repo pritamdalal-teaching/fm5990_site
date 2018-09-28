@@ -1,6 +1,10 @@
 ---
 title: "Data"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
 ---
 
 This page will contain that data that we use for in-class examples.
@@ -94,3 +98,6 @@ These are small samples of the types of data that we will be performing backtest
 [Market History Practice](data_practice_market_history.csv) - all OTM options from one month before expiration, until expiration.
 
 [Option History Practice](data_practice_option_history.csv) - all subsequent settle prices for any option that shows up in the market history.
+
+
+[Exercises](exercise_03_practice_options_data_without_answers.Rmd) - this R Markdown notebook contains exercises related to these data sets.  My intention is for you to work with the document in the source screen of R Studio.
