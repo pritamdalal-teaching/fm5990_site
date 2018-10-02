@@ -12,6 +12,12 @@ This site is a work in progress - thank you in advance for your patience.
 
 #### Announcements
 
+##### 10/2/2018
+- I posted Tutorial 07 that we will go over in class.  Please download it and put the **Options History** data sets into the same directory so we can read them in.
+
+- No new reading assignments for next week, this will give folks an opportunity to catch-up.
+
+
 ##### 9/28/2018
 - Posted a set of exercises for *Option History Practice*.  It's an R Markdown notebook, so enjoy.
 

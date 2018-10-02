@@ -89,10 +89,18 @@ First I'd like to get a sense of how the reading assignments and programming exe
 
 **Week 5 - Functions and Iteration**   
 
-You now have a bit of experience with writing scripts.  The next level of sophistication is writing functions. We will write a variety of example functions related to data: cleaning a dataframe, an option payoff function.  We will also talk about iterating with for-loops and also iterating with the tidyverse **purrr** package.
+You now have a bit of experience performing data analysis in the form of single scripts written in `.R` file.  This week we will continue our use of R Markdown (`.Rmd`) files as we further explore the Practice Option Data.  Along the way we will discuss iteration and functions and iteration.
 
 
+*Assignment:* 
 
+- Form with three to five of your fellow students.  Create a team name, and nominate a team lead.  Most of my administrative communication will be with your team lead.  Have the team lead email me the name of your group, as well as any type of options-related analyis you might want to work on.  I don't know if I'll be able to accomodate requests, but some direction might be helpful.
+
+- Catch-up on reading from previous assignments or working on previous exercises.
+
+- Advanced Optional Reading: [A Layered Grammar of Graphics](pdf_wickham_layered_grammar.pdf) - by Hadley Wickham.  This article describes the foundations of Wickham's approach to creating `ggplot2`. 
+
+&nbsp;
 
 **Week 6 - DataViz 1 & Project Assignment** 
 

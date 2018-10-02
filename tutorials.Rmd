@@ -17,3 +17,17 @@ author: "Pritam Dalal"
 output: html_document
 ---
 ```
+
+[07 Functions and Iteration](tutorial_07_functions_and_iteration.Rmd) - In this tutorial we do some basic calculations on the *Option History Practice* data set in an R Markdown file.  Along the way we introduce functions and iterations.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 07 - Functions and Interation"
+author: "Pritam Dalal"
+output: 
+  html_document:
+    df_print: paged
+editor_options: 
+  chunk_output_type: inline
+---
+```
+
