@@ -63,7 +63,11 @@ R has many tools to facilitate written communication.  You can write PDF article
 &nbsp;
 
 #### Thought Leaders and Notable Figures
-
+ˆˆ
 [Hadley Wickham](http://hadley.nz/) -- works at R Studio started the Tidyverse.
 
 [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/) -- an academic who has been writing about R for a long time.
+
+[Hillary Parker](https://hilaryparker.com/about-hilary-parker/)  -- she is a data scienctist at Stich Fix and also co-hosts the *Not So Standard Deviations Podcast* with Roger Peng. 
+
+[Bradley Bohmke](http://bradleyboehmke.github.io/courses/) -- his content is awesome and he has great style.  Also checkout his course website at the University of Cinncinati: http://uc-r.github.io/
