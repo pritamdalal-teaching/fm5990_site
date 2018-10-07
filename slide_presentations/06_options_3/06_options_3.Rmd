@@ -1,0 +1,131 @@
+---
+title: "Options Part 3"
+author: "Pritam Dalal"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Options Buyer and Sellers
+
+- In any insurance transaction there is a buyer and a seller.
+\vspace{10pt}
+- In most insurance markets there are certain classes of entities that buy the insurance, and other classes of entities that sell the insurance.
+\vspace{10pt}
+- For example, I've purchased car insurance from both State Farm and GEICO. There is never a time that GEICO or State Farm would buy insurance from me.
+\vspace{10pt}
+- Options markets are different.  Many entities (market-makers, hedge funds, retail traders) often both buy options and sell options.
+\vspace{10pt}
+- Said in a different way, in an options transaction the buyer and seller can be the same class of entity.
+
+## Net Positions (1 of 3)
+
+- As you saw from the exercises in the Options Part 2 slides, the payoff function of the option seller is the negative of the payoff function of the  options.
+\vspace{10pt}
+- For this reason, let's associate the number +1 with the act of buying an options contract.
+\vspace{10pt}
+- Similarly, let's associate the number -1 with the act of selling an options contract.
+\vspace{10pt}
+- More generally, we can associate a \emph{quantity} number $Q$ with an options trade.  If $Q > 0$ then the trade is to buy $Q$ options.  If $Q < 0$ then the trade is to sell $|Q|$ options.
+
+
+## Net Positions (2 of 3)
+
+- Suppose Liwei has engaged in $n$ trades on a particular option contract $\mathcal{O}$ and that the quantities of the trades were $Q_{1}, \ldots, Q_{n}$.
+\vspace{15pt}
+- Liwei's \emph{net position} in the option $\mathcal{O}$ is $Q^{*}$ where:
+\begin{align*}
+Q^{*} = \sum_{i=1}^{n} Q_{i}
+\end{align*}
+
+
+## Net Positions (3 of 3)
+
+
+- If $Q^{*}>0$ we say that Lewei is \emph{long} $Q^{*}$ contracts of $\mathcal{O}$.  More generally, we would say that Lewei has a \emph{net long} position in $\mathcal{O}$.
+\vspace{10pt}
+- If $Q^{*}<0$ we say that Lewei is \emph{short} $|Q^{*}|$ contracts of $\mathcal{O}$.  More generally, we would say that Lewei has a \emph{net short} position in $\mathcal{O}$.
+
+
+
+
+## Exercises: Trader Talk - \emph{Long} vs \emph{Short}
+
+These questions are slight generalizations of some of the questions from Options Part 2.  Assume that your only position related to the underlying is the options position that is mentioned.
+
+
+1.  If you have a net long position in a put, are you long or short the underlying?
+\vspace{10pt}
+1.  If you have a net short position in a put, are you long or short the underlying?
+\vspace{10pt}
+1.  If you have a net long position in a call, are you long or short the underlying?
+\vspace{10pt}
+1.  If you have a net short position in a call, are you long or short the underlying?
+
+
+## Option Pricing
+
+- What \emph{should} the price of an option be at any given point in time?
+\vspace{10pt}
+- This seems like an innocent question, but it took the collective quantitative finance community over one hundred years to answer in a satisfactory way.  Along the way modern finance was born.
+\vspace{10pt}
+- On your own mathematical finance journey, expect it to take years of concerted effort to fully absorb this material.
+\vspace{10pt}
+- In this class, I'm going to give you an extremely high-level overview of some aspects of option pricing.  Just enough so that we can do some meaningful analysis on options data.
+
+
+
+## Black-Scholes-Merton Formula
+
+- In the 1970s, decades of option pricing research coalesced into a pricing framework that yielded a fairly simple formula that can price vanilla options.
+\vspace{10pt}
+- Understanding the framework is more important than memorizing the formula.
+\vspace{10pt}
+- We don't have enough time to dig too deep into the framework.  
+\vspace{10pt}
+- We won't fixate on the formula too much either.
+
+
+
+## Black-Scholes-Merton Formula
+<!-- The upshot of the BSM pricing framework is that given several contract features, and several market values, you can assign a value to an option. -->
+\vspace{-25pt}
+\begin{align*}
+m = \text{BSM}(\text{p/c}, K, \text{T}, S_{t},\sigma, \delta, r)
+\end{align*}
+
+**Contract Features**
+
+- p/c - put or call
+
+- $K$ - strike price
+
+- T - expiration date (time to expiration)
+
+**Market Values**
+
+- $S_{t}$ - current underlying price
+
+- $\sigma$ - estimate of the standard deviation log-return of the price of underlying between now and expiration
+
+- $\delta$ - estimate of dividends paid over the life of the option
+
+- $r$ - risk-free interest rate
+
+
+## Volatility - $\sigma$
+
+- All the inputs of the BSM formula are readily observable, except for $\sigma$.
+\vspace{10pt}
+- The options market is the \emph{volatility} markets.
+\vspace{10pt}
+- The market for the underlying stock is the \emph{expected-return}
+market.
+\vspace{10pt}
+- \textbf{Question:} Suppose Jake is an SPY trader for Wolverine and that on a given day, the price of SPY drops by 10\%.  Should Jake increase or decrease $\sigma$ in his pricing models?

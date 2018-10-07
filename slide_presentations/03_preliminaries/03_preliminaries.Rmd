@@ -1,0 +1,113 @@
+---
+title: "Preliminaries"
+author: "Pritam Dalal"
+# date: "Thursday 8/30/2018"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+
+---
+
+
+## Files and Directories, and Paths
+
+- The part of the operating system responsible for managing files and directories is called the file system. 
+\vspace{10pt}
+- The file system consists of \textbf{files} and \textbf{folders} (also called \textbf{directories}).
+\vspace{10pt}
+- Files contain data such as text and numbers.
+\vspace{10pt}
+- Folders contain filea and other folders (also called \textbf{subfolders}).
+
+
+
+## Paths
+
+- Every file or directory in the file system has a location is given by a \textbf{path}, a sequence of charaters involving slashes and other punctuation.
+
+<!-- - A path of a directory is a sequence of subdirectories. -->
+
+<!-- - A path of a file is a sequence of subdirectories and then the file name -->
+
+Here are some made up paths for Windows and OS X:
+
+\textbf{Windows}
+
+\hspace{10pt} File: C:/R/fm5990/scripts/cash-money-script.R
+
+\hspace{10pt} Folder: C:/R/fm5990/scripts/
+
+\textbf{OS X}
+
+\hspace{10pt} File: Users/Pritam/files/R/fm5990/scripts/cash-money-script.R
+
+\hspace{10pt} Folder: Users/Pritam/files/R/fm5990/scripts/
+
+
+
+## Why Should You Care
+
+
+<!-- - The code you write will be contained in text files - you need to be able to find them once you've created them. -->
+<!-- \vspace{10pt} -->
+- The programs you write will often interact with other files or directories on your machine.
+\vspace{15pt}
+- The way you point your programs to other files is by file path \emph{strings}.
+\vspace{15pt}
+- RStudio \emph{projects} and a Git \emph{repositories} are both based around directories in your file system.
+\vspace{15pt}
+- \textbf{Bottom Line:} You need to be able to produce the path of any file on your computer.  This is a basic skill.
+
+## File Management Resources
+
+- If you want to be a file management ninja, complete the first three sections of \textbf{The Unix Shell} lesson by Software Carpentry:
+
+\begin{center}
+\textbf{\color{blue}\url{http://swcarpentry.github.io/shell-novice/}}
+\end{center}
+
+- Complete the entire tutorial and unlock \textbf{\color{yellow}10,000} nerd points.
+
+## Touch Typing and Resources
+
+- Poor typing skills can hold you back in programming.
+\vspace{10pt}
+- Coding involves a lot of numbers and special charaters: $ * ! #  
+\vspace{10pt}
+- These special characters are not the focus of most traditional typing education.
+\vspace{10pt}
+- Here is a good general typing resource:
+\begin{center}
+\textbf{\color{blue}\url{https://www.how-to-type.com/}}
+\end{center}
+\vspace{10pt}
+- Here is a typing resource that focuses on coding specific typing:
+
+\begin{center}
+\textbf{\color{blue}\url{https://typing.io/}}
+\end{center}
+
+
+## Keyboard Shortcuts
+
+- Overreliance on your trackpad in inefficient.
+\vspace{10pt}
+- It pains my heart and soul to witness such things.
+\vspace{10pt}
+- Computer ninjas are masters of keyboard shortcuts.
+\vspace{10pt}
+- Start with these:
+
+\small
+
+\hspace{30pt}    1. (OS) ctr/cmd + tab -- switch between windows
+  
+\hspace{30pt}    2. (RStudio) ctr + 1 -- move focus to Source
+  
+\hspace{30pt}    3. (RStudio) ctr + 2 -- move focus to Console
+
+\normalsize
+\vspace{10pt}
+\textbf{Fact:} There is no such thing as a stupid keyboard shortcut question.

@@ -1,0 +1,92 @@
+---
+title: "Installing R & RStudio"
+author: "Pritam Dalal"
+#date: "Thursday 8/30/2018"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Installing R (Windows)
+
+1. Go to \textbf{www.r-project.org}. (Or just Google \textbf{``install R''} and the click on first webpage that is returned.)
+\vspace{1ex}
+2. Under the R logo, click link that says \textbf{CRAN}.
+\vspace{1ex}
+3. Choose the first link under \textbf{0-Cloud}.
+\vspace{1ex}
+4. Click the link for Windows.
+\vspace{1ex}
+5. Click the link that says \textbf{install R for first time}.
+\vspace{1ex}
+6. Click the link \textbf{Download R 3.5.1 for Windows}.
+\vspace{1ex}
+7. Run the .exe file you downloaded and follow the prompts.
+
+
+## Installing R Studio (Windows)
+
+1. Google \textbf{``install RStudio''} and click on the first webpage that is returned.
+\vspace{1ex}
+2. Find the heading that says \textbf{Installers for Supported Platforms} which is towards the bottom of the page.
+\vspace{1ex}
+3. You will want to download:
+  \begin{center}
+  \textbf{RStudio 1.1.456 - Windows Vista/7/8/10} 
+  \end{center}
+\vspace{1ex}
+4. Run the .exe file you downloaded and follow the prompts.
+
+
+## Real Talk: Words of Advice
+
+\begin{center}
+
+\textbf{ {\color{red} PROGRAMMING} is {\color{red} THE MOST USEFUL SKILL} you will learn in the Master of Financial Mathematics program.}
+
+\end{center}
+
+
+
+## A Few Words About R and RStudio
+
+- \textbf{R} and \textbf{Python} are the two most popular programming languages for \emph{data analysis}.
+\vspace{15pt}
+- Both languages are used \emph{everywhere} in finance.
+\vspace{15pt}
+- Both languages are covered from the ground up in \textbf{FM 5990}.
+<!-- \vspace{15pt} -->
+<!-- - Today we are going to talk about R and RStudio. -->
+\vspace{15pt}
+- \textbf{RStudio} is a program that is separate from the programming language R.
+\vspace{15pt}
+- The two are intimately related because the main puropse of RStudio is to be a convenient place to write R code.
+<!-- \vspace{1pt} -->
+<!-- - Today we are going to: -->
+<!--     * install R and R Studio -->
+<!--     * brief tutorial of both -->
+<!--     * talk a more about FM 5990 -->
+
+
+<!-- ## Download Materials for This Tutorial -->
+
+<!-- 1. Go to my GitHub repository:  -->
+<!-- \begin{center} -->
+<!-- \textbf{www.github.com/pritamdalal/mfm\_r\_intro} -->
+<!-- \end{center} -->
+<!-- \vspace{1ex} -->
+<!-- 2. Click on \textbf{Clone or Download}. -->
+<!-- \vspace{1ex} -->
+<!-- 3. Choose the \textbf{Dowload as ZIP} option. -->
+<!-- \vspace{1ex} -->
+<!-- 4. Unzip this folder and save to your Desktop as \textbf{mfm\_r\_intro}. -->
+<!-- \vspace{1ex} -->
+<!-- 5. In this folder you can find the files that we are going to use for today's tutorial. -->
+

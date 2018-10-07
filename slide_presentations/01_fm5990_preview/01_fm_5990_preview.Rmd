@@ -1,0 +1,108 @@
+---
+title: "A Preview of FM 5990"
+author: "Pritam Dalal"
+# date: "August 30, 2018"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Motivation
+
+- \textbf{Data analysis} is a \textbf{crucial skill} for quantitative professionals.
+\vspace{10pt}
+- \emph{Quants} are being replaced by \emph{Data Scientists}.
+\vspace{10pt}
+- MFM graduates are increasingly working in data analysis roles.
+\vspace{10pt}
+- This course is the MFM's response to the changing professional landscape.
+\vspace{10pt}
+- It is an \textbf{introductory treatment} of \textbf{R} and \textbf{Python} for data analysis in the context of \textbf{quantitative finance}.
+
+
+## Course Specifics & Philosophy
+
+- Tuesdays from 5:30p-7:10p in Vincent 364.
+\vspace{10pt}
+- 2 credits pass/fail - let's focus on learning not grades.
+\vspace{10pt}
+- Learning data science on toy data sucks.
+\vspace{10pt}
+- Learning data science on cool data is awesome.  
+\vspace{10pt}
+- \textbf{Theorem:} awesome > sucks.  \textbf{Proof:} Exercise.
+\vspace{10pt}
+- \textbf{Corrollary:} All in-class examples, projects, and assignments are going to involve real world financial data.
+\vspace{10pt}
+- A big \textbf{{\color{green}THANKS}} to our industry data partners.
+
+## Industry Data Partners
+
+\textbf{www.wolve.com}
+```{r echo=FALSE, out.width='65%'}
+knitr::include_graphics("wolverine_screenshot.png")
+```
+
+\vspace{5pt}
+
+\textbf{www.historicaloptiondata.com}
+
+\vspace{-1pt}
+
+![](delta_neutral.png){width=20.6%}&nbsp;&nbsp;&nbsp;![](historical_option_data.png){width=55%}
+\vspace{5pt}
+
+\textbf{www.qandl.com}
+
+\vspace{-1pt}
+```{r echo=FALSE, out.width='35%'}
+knitr::include_graphics("quandl.png")
+```
+
+
+
+## Wolverine Analysis Project (1 of 3)
+
+- Wolverine Trading is a option market maker. \textbf{What???}
+\vspace{5pt}
+- Let's say you wanted to trade a particular option, and that Wolverine is a market-maker for that option.   
+\vspace{5pt}
+- This means that you can call up Wolverine and ask them what their \emph{market} is for that option. (Note: you haven't told them if you want to buy or sell.)
+\vspace{5pt}
+- \textbf{Wolverine's Market:} A price at which they would sell the option \emph{-and simultaneously-} a price at which they would buy the option. 
+\vspace{5pt}
+- The price at which they are willing to buy is their \textbf{bid price}.
+\vspace{5pt}
+- The price at which they are willing to sell is their \textbf{ask price}.
+    * Question: Which is higher the bid or the ask?
+    
+    
+## Wolverine Analysis Project (2 of 3)
+
+- On any given day, Wolverine is a market maker for literally hundreds of thousands of options.
+\vspace{10pt}
+- The way they make money is by buying and selling lots of different options, with their bids being lower than their asks.
+\vspace{10pt}
+- All the while, they hope they don't accumulate large positions in any one option or underlying (AAPL, FB, GOOG).  
+\vspace{10pt}
+- If they do accumulate positions, which is inevitable in their business, they hope that the underlying stock doesn't move too much, as this could result in significant losses.
+
+## Wolverine Analysis Project (3 of 3)
+
+- Companies who's stock can be owned by anyone (AAPL, FB, GOOG) are highly regulated.
+\vspace{10pt}
+- They are required to publicly report their profitability once per quarter.  This is called their \emph{quarterly earnings report}.
+\vspace{10pt}
+- What do you think happens to the companies stock price around the time of their earnings report?
+\vspace{10pt}
+- This is a time of \textbf{\color{red}high risk} for option market-makers.
+\vspace{10pt}
+- Wolverine has tasked us with analyzing the price movement of stocks in the days following their earnings reports.
+\vspace{10pt}
+- \textbf{How:} We will use the data that Wolverine has provided. We will also repeat the analysis using the Delta Neutral data and make sure they lead to similar conclusions.

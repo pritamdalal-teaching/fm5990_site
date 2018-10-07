@@ -1,0 +1,148 @@
+---
+title: "Options Part 1"
+author: "Pritam Dalal"
+# date: "9/3/2018"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Context
+
+- \emph{Options} are simple financial contracts that show up everywhere in finance.
+\vspace{10pt}
+- They can be viewed as the building blocks of many other financial instruments.
+\vspace{10pt}
+- The theory of option pricing is the starting point for much of quantitative finance.
+\vspace{10pt}
+- Most of the data that we are going to analyze in this class will be options related.
+\vspace{10pt}
+- \textbf{Bottom Line:} You need to understand options.
+
+
+## Options are Insurance Contracts
+
+- \textbf{Options} are simple \textbf{insurance} contracts wrapped around other financial assets.
+\vspace{10pt}
+- The financial asset that is being insured is called the \emph{underlying}.
+\vspace{1pt}
+- The types of underlyings that we are going to discuss in this class will mostly be stocks and ETFs.  
+\vspace{10pt}
+- The essential concepts are the same for other underlyings like interest rates, futures, or barrels of oil. 
+\vspace{10pt}
+- Let's build some intuition using a type of insurance that you are all familiar with: car insurance.
+
+
+## Wolve Auto Insurance
+
+- Wolverine Trading wants to get into the car insurance business.  They would like our help with formulating a pricing policy.
+\vspace{10pt}
+- The type of underlying they want to insure: a specific driver coupled with a specifc vehicle.
+\vspace{10pt}
+- The driver being insured is going to pay Wolve \emph{premium}.
+\vspace{10pt}
+- In exchange for premium, Wolve will reimburse the driver whenever damage to the car exceeds a certain dollar amount, called the \emph{strike} (deductible).
+\vspace{10pt}
+- **Intuition Check:** Do you think Wolverine should charge the same premium irrespective of the underlying?
+
+
+
+## Price of Underlying
+
+- Sandra has two different vehicles that she wants to switch over to Wolve Auto insurance.
+\vspace{10pt}
+- One is an old busted Mazda 3 that she bought several years ago when she was a struggling MFM instructor.
+\vspace{10pt}
+- The other is a fancy new self-driving Tesla that she bought last week after starting her lucrative options trading career.
+\vspace{10pt}
+- **Intuition Check:** Which one should be more expensive to insure? Why?  
+
+
+## Strike Price of Contract
+
+
+- Wolve Auto has three different strikes that they can offer Sandra for the insurance on her self-driving Tesla:
+    * \emph{at-the-money} $:=$ \$0
+    * \$1,000
+    * \$5,000
+\vspace{15pt}  
+- **Exercise:** Order the premium for the three strike prices from cheapest to most expensive. Explain.
+
+
+## Time to Expiration (Tenor) of Contract
+
+- Wolve has three different contract lengths that they can offer Sandra for her Tesla insurance:
+    * 0.25 years
+    * 0.50 years
+    * 1.00 years
+\vspace{15pt}
+- **Exericise:** Order the premium for these tenors from most expensive to least expensive.  Explain.
+
+
+## Volatility of Underlying
+
+- Wolve is pricing insurance for two different customers, Sally and Patty.
+\vspace{15pt}
+- Both Sally and Patty are looking to purchase insurance a fancy new self-driving Tesla.   They both want a 1-year contract with with a $1,000 strike price.
+\vspace{15pt}
+- Here is how Sally's friends describe her: calm, chill, responsible, quiet, serene.
+\vspace{15pt}
+- Here is how Patty's friends describe her: wild, hyper, flakey, loud, volatile.
+\vspace{15pt}
+- **Intuition Check:** Who should Wolverine charge more for insurance? Why?
+
+
+## Insurance Payoff Graph (1 of 3)
+
+- It's 8aSaturday morning.  Sally is driving on the freeway on her way to CrossFit, hands at 10-2, eyes on the road, listening to classical music.
+\vspace{10pt}
+- Patty, also driving on the freeway, is on her way home from an all night rave.  As she is driving, she is blasting Bassnectar and posting to her IG story.
+\vspace{10pt}
+- Suddenly, Patty loses control and swerves in front Sally...(freeze tape)
+\vspace{10pt}
+- Patty is riding dirty with no insurance, but Sally purchased a $1000-strike contract before she left the dealership.
+\vspace{10pt}
+- \textbf{Excercise:} Graph the value of Sally's insurance payoff as a function of the damage to her vehicle from the accident.
+
+
+
+## Insurance Payoff Graph (2 of 3)
+
+
+```{r}
+strike <- 1000 
+damage <- seq(0, 3000, 500)
+payoff <- pmax(damage - strike, 0)
+heading <- "insurance payoff"
+plot(damage, payoff, type="n", main="Payoff to Sally")
+lines(damage, payoff, type="l")
+# 
+# x <- c(1:5); y <- x # create some data 
+# par(pch=22, col="red") # plotting symbol and color 
+# par(mfrow=c(2,4)) # all plots on one page 
+# opts = c("p","l","o","b","c","s","S","h") 
+# for(i in 1:length(opts)){ 
+#   heading = paste("type=",opts[i]) 
+#   plot(x, y, type="n", main=heading) 
+#   lines(x, y, type=opts[i]) 
+# }
+```
+
+
+## Insurance Payoff Graph (3 of 3)
+
+- The payoff graph we created was from Sally's perspective.  
+\vspace{15pt}
+- **Intuition Check:** What does the graph look like from Wolverine's perspective?
+\vspace{15pt}
+- \textbf{Jargon:} We say that Sally is long (bought) the insurance contract and that Wolverine is short (sold) the insurance contract.
+
+
+
+

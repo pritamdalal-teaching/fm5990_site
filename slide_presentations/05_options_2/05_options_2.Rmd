@@ -1,0 +1,182 @@
+---
+title: "Options Part 2"
+author: "Pritam Dalal"
+output: 
+  beamer_presentation:
+    theme: "default"
+    colortheme: "fly"
+    fonttheme: "default"
+---
+
+## Vanilla vs Exotic
+
+- Options come in a lot of different varieties: European, American, Asian, digital, look-back, etc.
+\vspace{10pt}
+- European and American options are considered the simplest and for that reason they are collectively referred to as \emph{vanilla} options.
+\vspace{10pt}
+- All other options are considered more complicated and are therefore  referred to as \emph{exotic}.
+\vspace{10pt}
+- Vanilla options are transacted more than exotic options.
+\vspace{10pt}
+- In this class we will focus on vanilla options. 
+
+
+## American Options as Insurance
+
+- American (equity) options are insurance contracts that have as their underlying publicly traded stocks.
+\vspace{10pt}
+- They are called \emph{options} because owning them gives you a right to do something, but you are **not required** to exercise that right.
+\vspace{10pt}
+- You have the \emph{option} exercise if it happens to be beneficial to you.
+\vspace{10pt}
+- This \emph{right with out obiligation} has the effect of creating an insurance benefit.
+
+
+## American Options as Insurance
+
+- American options come in two varieties: \textbf{puts} and \textbf{calls}.
+\vspace{10pt}
+- \textbf{Put} contracts are insurance for entities that already own the underlying stock.  
+
+    - Puts protect them from the event that the value of their stock falls.
+\vspace{10pt}
+- \textbf{Call} contracts are insurance for entities that intend to buy the stock in the future.  
+
+    - Calls protect them from the event that the price of the stock rises before they've had a chance to buy it.
+
+
+## American Options as Insurance
+
+- In reality, you don't have to purchase puts or calls as insurance.
+\vspace{5pt}
+- You don't have to already own the underlying buy puts, nor do you have to intend to buy the underlying to buy calls.  
+\vspace{10pt}
+- You can buy and/or sell either contract freely to express different views on the underlying.
+
+
+## American Option Contract Specification
+
+- Let's consider American options on some stock $\mathcal{S}$.  
+\vspace{10pt}
+- Puts and calls on $\mathcal{S}$ are defined by two contract features: the **strike price** and the **expiration date**.
+\vspace{10pt}
+- \textbf{Call:} is the right, but not the obligation, to **buy** a share of $\mathcal{S}$ at the strike price at any time before the expiration date.
+\vspace{10pt}
+- \textbf{Put:} is the right, but not the obligation, to **sell** a share of $\mathcal{S}$ at the strike price at any time before the expiration date.
+
+
+## Option Buyers and Option Sellers
+
+- There are two sides to any options transaction
+\vspace{10pt}
+- The option buyer, pays premium and owns a right.  
+\vspace{10pt}
+- The option seller, recieves premium and obligated to respect the option buyer's right.
+\vspace{10pt}
+- **Put:** if the option buyer exercises their right to sell the underlying, the option seller must buy the underlying from them.
+\vspace{10pt}
+- **Call:** if the option buyer exercises their right buy the underlying, the options seller must sell the underlying to them.
+
+
+## SPY Option Example - Context
+
+- Ruobing has purchased an call on SPY, with a strike price of \$250.  He paid $10 in premium.
+\vspace{10pt}
+- Farez was the option seller on this transaction.
+\vspace{10pt}
+- It's now the final day of the contract and Ruobing has still not exercised his right.
+
+
+## SPY Option Example - Exercises
+
+1. Under what circumstances will Ruobing choose to excericse his right?
+\vspace{10pt}
+1. Under what circumstances does Ruobing make money?
+\vspace{10pt}
+1. Under what circumstances does Farez make money?
+\vspace{10pt}
+1. What are the min and max of Ruobing's PNL (include premium)?
+\vspace{10pt}
+1. What are the min and max of Farez's PNL (include premium)?
+\vspace{10pt}
+1. Answer the same questions for a put with the same strike, expiration, and premium.
+
+## American vs European
+
+- European options are very similar to American options.
+\vspace{10pt}
+- The only difference is that with a European options you can only exercise your right immediately after the final training day of the contract.
+\vspace{10pt}
+- With American options you can \emph{early exercise} anytime before the expiration.
+\vspace{10pt}
+- **European** options have an **exercise date (point)**.  
+\vspace{10pt}
+- **American** options have an **exercise window**.
+
+
+## American vs European
+
+- **Fact:** It is never optimal to early exercise an American call, and it is almost never optimal to early exercise an American put.
+\vspace{10pt}
+- **Corrollary:** In this class will consider American and European options to be the same. (Only the most pedantic of quants will take issue with this.)
+\vspace{10pt}
+- The notion of a \emph{payoff function} of an American option will be based around the right to exercise at the time of expiration.
+
+## Option Payoff Functions (1 of 4)
+
+- Suppose the current time is $t$.
+\vspace{10pt}
+- Consider a put and call on the same underlying stock, both with expiration $T > t$.
+\vspace{10pt}
+- Suppose they both have strike $K$.
+\vspace{10pt}
+- Let $S_{T}$ be the price of the stock at the time of expiration.
+\vspace{10pt}
+- Let $\pi_{p}$ be the put buyer's payoff, and let $\pi_{c}$ be the call buyer's payoff.
+
+## Option Payoff Functions (2 of 4)
+
+- Put Buyer Payoff: $\pi_{p}(S_{T}) = max \big \{(K - S_{T}),0 \big \}$
+\vspace{10pt}
+- Call Buyer Payoff: $\pi_{c}(S_{T}) = max \big \{(S_{T} - K), 0 \big \}$
+\vspace{10pt}
+- \textbf{Exercise:} convince yourself that the above is true given the contract specification of vanilla puts and call.
+\vspace{10pt}
+- \textbf{Exercise:} graph $\pi_{p}$ and $\pi_{c}$ as a function of $S_{T}$.
+\vspace{10pt}
+- \textbf{Exercise:} Write the expressions for seller's payoff of both puts and calls.  Draw the graphs.
+
+
+
+## Option Payoff Functions (3 of 4)
+
+- Consider $\pi_{c}$ and $\pi_{p}$ as functions of $S_{T} \in (0, +\infty)$.
+\vspace{10pt}
+- Both functions are differentiable at all points except for $S_{T} = K$.
+\vspace{10pt}
+- \textbf{Exercise:} What are the two values of $\frac{d\pi_{c}}{dS_{T}}$?
+\vspace{10pt}
+- \textbf{Exercise:} What are the two values of $\frac{d\pi_{p}}{dS_{T}}$?
+
+
+## Option Payoff Functions (4 of 4)
+
+- Let's say it's time $t<T$, and $S_{t}$ is the current price of the stock.
+\vspace{10pt}
+- \textbf{Exercise:} If you own the put, which inequality do you hope is true between $S_{t}$ and $S_{T}$.  What ineqality do you hope holds true between between $S_{T}$ and $K$?
+\vspace{10pt}
+- \textbf{Exercise:} If you own the call, which inequality do you hope is true between $S_{t}$ and $S_{T}$? How about between $S_{T}$ and $K$?
+
+
+## Exercises: Trader Talk - \emph{Long} vs \emph{Short}
+1. Google the meaning of "long" and "short" the way that traders use the words.
+\vspace{10pt}
+1.  If you buy a put, are you long or short the underlying?
+\vspace{10pt}
+1.  If you sell a put, are you long or short the underlying?
+\vspace{10pt}
+1.  If you buy a call, are you long or short the underlying?
+\vspace{10pt}
+1.  If you sell a call, are you long or short the underlying?
+
+

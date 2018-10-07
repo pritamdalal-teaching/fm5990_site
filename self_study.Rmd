@@ -17,6 +17,10 @@ Here are some self-study resources for you to explore.
 
 [R Packages - Hadley Wickham](http://r-pkgs.had.co.nz/)
 
+[Data Wrangleing with R - Bradley Boehmke](http://bradleyboehmke.github.io/books/)
+
+[R Markdown: The Definitive Guide - Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
+
 &nbsp;
 
 #### Tutorials
@@ -63,7 +67,7 @@ R has many tools to facilitate written communication.  You can write PDF article
 &nbsp;
 
 #### Thought Leaders and Notable Figures
-ˆˆ
+
 [Hadley Wickham](http://hadley.nz/) -- works at R Studio started the Tidyverse.
 
 [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/) -- an academic who has been writing about R for a long time.
