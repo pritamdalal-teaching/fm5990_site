@@ -22,7 +22,8 @@ navbar:
       href: syllabus.html
     - text: "Q & A"
       href: q_and_a.html
-
+    - text: "Partners"
+      href: partners.html
 output:
   html_document:
     theme: flatly

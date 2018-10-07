@@ -1,0 +1,26 @@
+---
+title: "Partners"
+output: html_document
+---
+
+https://www.wolve.com
+```{r echo=FALSE, out.width='65%'}
+knitr::include_graphics("wolverine_screenshot.png")
+```
+
+&nbsp;
+
+https://www.historicaloptiondata.com
+
+
+
+![](delta_neutral.png){width=20.6%}&nbsp;&nbsp;&nbsp;![](historical_option_data.png){width=55%}
+
+
+https://www.qandl.com
+
+
+```{r echo=FALSE, out.width='35%'}
+knitr::include_graphics("quandl.png")
+```
+
