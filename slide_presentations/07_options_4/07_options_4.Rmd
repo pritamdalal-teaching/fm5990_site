@@ -131,34 +131,34 @@ m = \text{BSM}(\text{p/c}, K, \text{T}, S_{t},\sigma, \delta, r)
 ## Black-Scholes-Merton Formula (2 of )
 
 ```{r}
-library(tidyverse)
-library(fOptions)
-upx <- seq(50, 150, 5)
-type = "c"
-K = 100
-time_to_exp = 0.75
-tenors = seq(0, 0.75, 0.125)
-vol <- 0.15
-payoff <- max((upx - K),0)
-div = 0
-rf = 0.01
-
-opt <-
-fOptions::GBSOption(TypeFlag = type
-                    ,S = upx
-                    ,X = K
-                    ,Time = time_to_exp
-                    ,r = rf
-                    ,b = div
-                    ,sigma = vol)
-
-df_graph_data <- tibble(
-  payoff = payoff
-  , price = opt@price
-  , underlying = upx
-)
-
-ggplot(dtat)
+# library(tidyverse)
+# library(fOptions)
+# upx <- seq(50, 150, 5)
+# type = "c"
+# K = 100
+# time_to_exp = 0.75
+# tenors = seq(0, 0.75, 0.125)
+# vol <- 0.15
+# payoff <- max((upx - K),0)
+# div = 0
+# rf = 0.01
+# 
+# opt <-
+# fOptions::GBSOption(TypeFlag = type
+#                     ,S = upx
+#                     ,X = K
+#                     ,Time = time_to_exp
+#                     ,r = rf
+#                     ,b = div
+#                     ,sigma = vol)
+# 
+# df_graph_data <- tibble(
+#   payoff = payoff
+#   , price = opt@price
+#   , underlying = upx
+# )
+# 
+# ggplot(dtat)
 ```
 
 
