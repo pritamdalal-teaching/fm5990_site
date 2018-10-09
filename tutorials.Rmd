@@ -31,3 +31,12 @@ editor_options:
 ---
 ```
 
+[08 Data Visualization 1](tutorial_08_data_visualization_1_without_answers.Rmd) - this tutorial focuses on data visualization using the *Option History Practice* data.Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 08 - Data Visualization 1"
+author: "Pritam Dalal"
+output: html_document
+---
+```
+

@@ -102,24 +102,49 @@ You now have a bit of experience performing data analysis in the form of single 
 
 &nbsp;
 
-**Week 6 - DataViz 1 & Project Assignment** 
+**Week 6 - Data Visualization 1** 
 
 Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
 
-<!-- Some statics such as linear regression and PCA.  -->
+*Assignment:* 
+
+- Reserve a meeting spot with me next week. 
+
+- Read and work through these two tutorials on visualization by Bradley Boehmke.  There is a lot of material here so don't expect to complete it in a single week.  To really absorbe the material, try applying these techniques to the *Option History Practice Data*:
+  - http://uc-r.github.io/quickplots
+  - http://uc-r.github.io/gda
+
+- I will also assign each team a preliminary exercise with the *Option History Practice* data that will relate to your project.  Your team lead has to e-mail me in order to get the assignment.
 
 &nbsp;
 
-**Week 7 - DataViz 2 **
+**Week 7 - NO CLASS - Meeting with Groups Individually**
 
-More data visualization and the R data analysis project with be assigned.
+There will not be regular class on this day.  Rather, I am going to meet with groups individually to discuss the projects.  The purpose of this meeting is for me to clearly articulate the project to you, and for me to assess where the students are in their understanding of the skills needed to complete the projects.  
 
+Here are three available slots on Tuesday 10/16 in Vincent 364:
+
+- 400p-450p
+
+- 500p-550p
+
+- 600p-650p
+
+- 700p-750p
+
+To reserve as spot, talk to me after class on Tuesday 10/9, or e-mail me.
+
+*Assignment:* 
+
+- Continue working the Boehmke's visualization tutorials.
+
+- Working on projects.
 
 &nbsp;
 
-**Week 8 - Project Presentations**
 
-We will the group projects.  If there is time remaining we will start with Python.
+**Week 8 - Data Visualization 2**
+
 
 
 

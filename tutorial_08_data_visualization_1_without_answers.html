@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Pritam Dalal" />
+
+
+<title>Tutorial 08 - Data Visualization 1</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">FM 5990</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="instructor.html">Instructor</a>
+</li>
+<li>
+  <a href="weekly_plan.html">Weekly Plan</a>
+</li>
+<li>
+  <a href="tutorials.html">Tutorials</a>
+</li>
+<li>
+  <a href="slides.html">Slides</a>
+</li>
+<li>
+  <a href="self_study.html">Self-Study</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+<li>
+  <a href="q_and_a.html">Q &amp; A</a>
+</li>
+<li>
+  <a href="partners.html">Partners</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Tutorial 08 - Data Visualization 1</h1>
+<h4 class="author"><em>Pritam Dalal</em></h4>
+
+</div>
+
+
+<p>The purpose of this tutorial is to introduce you to data visualization with the <code>ggplot2</code> package. Visualization is a massive subject and we are only going to scratch the surface. My approach will be to introduce this area by way of creating graphs that help us understand the <em>Option History Practice</em> data set. This is merely an introduction, and is by no mean comprehensive.</p>
+<div id="loading-libraries-and-reading-data" class="section level4">
+<h4>Loading Libraries and Reading Data</h4>
+<p>Load the libraries…like a boss.</p>
+<pre class="r"><code># library(tidyverse)</code></pre>
+<p>Read in the data…like a boss.</p>
+<pre class="r"><code># df_market_history &lt;- read_csv(&quot;data_practice_market_history.csv&quot;, col_types = cols())</code></pre>
+<p>Look at the data, because it’s pretty.</p>
+<pre class="r"><code># df_market_history</code></pre>
+</div>
+<div id="liquidity---volume-vs-spread" class="section level4">
+<h4>Liquidity - Volume vs Spread</h4>
+<p><em>Liquidity</em> is an extremely important concept in trading. We say that a security or instrument is <em>liquid</em> if three things hold.</p>
+<ol style="list-style-type: decimal">
+<li><p>Large volumes trade daily.</p></li>
+<li><p>There is a narrow bid-ask spread.</p></li>
+<li><p>Large quantities can be traded with out moving the bid or ask.</p></li>
+</ol>
+<p>Usually it is the case that these three things go together. The purpose of this analysis will be to demonstrate that #1 and #2 coincide in our options data</p>
+<pre class="r"><code># # create a liquidity report with dplyr
+# df_liquidity &lt;-
+#   df_market_history %&gt;% 
+#     group_by(underlying) %&gt;% 
+#     summarize(daily_volume = (sum(volume) / nrow(df_market_history %&gt;% distinct(trade_date)))
+#               ,avg_spread = mean(ask - bid)) %&gt;% 
+#     arrange(desc(daily_volume))
+# df_liquidity
+# 
+# # base graph (this is worthless because the huge volume outliers - can you guess what they are?)
+# qplot(daily_volume, avg_spread, data = df_liquidity, geom=&quot;point&quot;)
+# 
+# # it&#39;s often useful to take the logs in this situation - now it&#39;s easier to see that high volumes correlate with narrow sreads
+# qplot(log(daily_volume), avg_spread, data = df_liquidity, geom=&quot;point&quot;)
+# 
+# # let&#39;s add a smooth line because it&#39;s baller
+# qplot(log(daily_volume), avg_spread, data = df_liquidity, geom=c(&quot;point&quot;,&quot;smooth&quot;))
+# 
+# # another approach is to make this unit-less by plotting the rank of the volume
+# qplot(log(daily_volume), avg_spread, data = df_liquidity, geom=c(&quot;point&quot;,&quot;smooth&quot;))
+# 
+# # let&#39;s reproduce this graph using ggplot()
+# ggplot(data = df_liquidity) +
+#   geom_point(mapping = aes(x = log(daily_volume), y = avg_spread)) +
+#   geom_smooth(mapping = aes(x = log(daily_volume), y = avg_spread), se = FALSE, method = &quot;loess&quot;)</code></pre>
+<p><strong>Exercises:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Google to figure out how you can make <code>geom_smooth()</code> graph a regression line instead of it’s default behavior.</li>
+</ol>
+</div>
+<div id="deltas-of-otm-options" class="section level4">
+<h4>Deltas of OTM Options</h4>
+<p>ATM options have a 50 (absolute) delta. The farther out of the money an option is, the smaller it’s delta becomes. We are going to demostrate this with our data.</p>
+<p>Let’s graph the absolute deltas of OTM options and see the relationship between strike and delta. To keep things simple we will focus on SPY for 8/16/2013.</p>
+<pre class="r"><code># # let&#39;s look at SPY chain from a particular day: 8/16/2013 
+# df_spy &lt;-
+#   df_market_history %&gt;% 
+#     filter(underlying == &quot;SPY&quot;) %&gt;% 
+#     filter(trade_date == as.Date(&quot;2013-08-16&quot;))
+# df_spy
+# 
+# # basic plot - scatter plot with geom_point()
+# ggplot(data = df_spy) +
+#   geom_point(mapping = aes(x = strike, y = delta))
+# 
+# # let&#39;s make this unit-less by setting the x-coordinate to log(strike/implied_forward) - this is sometimes referred to as the &quot;log-strike&quot; or &quot;log-moniness&quot;.
+# ggplot(data = df_spy) +
+#   geom_point(mapping = aes(x = log(strike/implied_forward), y = delta))</code></pre>
+</div>
+<div id="otm-option-prices" class="section level4">
+<h4>OTM Option Prices</h4>
+<p>Let’s look at OTM option prices for a variety of underlyings on a particular day.</p>
+<pre class="r"><code># # introducing the purr::map_dbl() function
+# # it allows you to easily vectorize a user defined function
+# # see Jenny Bryan&#39;s purrr tutorial for more on this
+# f &lt;- function(corp){
+#   if (corp == &quot;put&quot;) {-1} else {1}
+# }
+# 
+# f(&quot;put&quot;)
+# f(df_market_history$type) # can&#39;t put in a vector like built in functions
+# purrr::map_dbl(df_market_history$type, f) # this worked
+# 
+# 
+# df_index_options &lt;- 
+#   df_market_history %&gt;% 
+#     # filter just the big four ETFs
+#     filter(underlying %in% c(&quot;SPY&quot;, &quot;IWM&quot;, &quot;QQQ&quot;, &quot;DIA&quot;)) %&gt;% 
+#     filter(trade_date == as.Date(&quot;2013-08-16&quot;)) %&gt;% 
+#     # adding the signed delta column using a bit of functional programming
+#     mutate(signed_delta = delta * map_dbl(type, function(corp) {if(corp == &quot;put&quot;){-1} else {1}}))
+# 
+# 
+# #look at the data frame
+# df_index_options
+# 
+# # basic plot
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = strike, y = bid))
+# # add colors for underlying
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = strike, y = bid, color = underlying))
+# # use log(strike) and relative option price to remove units, this allows for easier comparison
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = log(strike/implied_forward), y = bid/implied_forward, color = underlying))
+# # add the facet to see all of these side-by-side - but they look all squished together.  
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = log(strike/implied_forward), y = bid/implied_forward, color = underlying)) +
+#   facet_wrap(~ underlying, nrow = 1)
+# # have two rows on the facet so that it looks better.
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = log(strike/implied_forward), y = bid/implied_forward, color = underlying)) +
+#   facet_wrap(~ underlying, nrow = 2)</code></pre>
+<p><strong>5-minute Challenge:</strong> Based on the final graph above, which underlying do you think has the highest ATM volatility on 8/16/2013? Veryify your hypothesis with a query on df_market_history.</p>
+<pre class="r"><code>## Solution:</code></pre>
+</div>
+<div id="implied-volatility-skews" class="section level4">
+<h4>Implied Volatility Skews</h4>
+<p>It’s often useful to look at volatility skews. We’ll use the <code>df_index_options</code> dataframe that we created above.</p>
+<pre class="r"><code># # basic scatter plot
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = strike, y = implied_vol))
+# 
+# # let&#39;s add a little flair 
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = strike, y = implied_vol, color = underlying))
+# 
+# # facet wrap - looks crappy because we didn&#39;t normalzie strike 
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = strike, y = implied_vol, color = underlying)) +
+#   facet_wrap(~ underlying, nrow = 2)
+# 
+# # normalizing strike 
+# ggplot(data = df_index_options) +
+#   geom_point(mapping = aes(x = log(strike/implied_forward), y = implied_vol, color = underlying)) +
+#   facet_wrap(~ underlying, nrow = 2)</code></pre>
+</div>
+<div id="skews-through-time" class="section level4">
+<h4>Skews Through Time</h4>
+<p>We can visualize skews through time.</p>
+<pre class="r"><code># # grabbing all SPY skews for the 9/21/2013 expiration
+# df_spy_time &lt;-
+#   df_market_history %&gt;% 
+#     filter(underlying == &quot;SPY&quot;) %&gt;%
+#     filter(expiration == as.Date(&quot;2013-09-21&quot;)) %&gt;% 
+#     arrange(trade_date, strike)
+#   
+# # basic plot
+# ggplot(data = df_spy_time) +
+#   geom_point(mapping = aes(x = strike, y = implied_vol))
+# 
+# # let&#39;s look at less data and apply color differentiation to trade_date
+# ggplot(data = df_spy_time %&gt;% filter(trade_date &lt; as.Date(&quot;2013-09-01&quot;))) +
+#   geom_point(mapping = aes(x = strike, y = implied_vol, color = trade_date))
+# 
+# # lets use a line instead
+# ggplot(data = df_spy_time %&gt;% filter(trade_date &lt; as.Date(&quot;2013-09-01&quot;))) +
+#   geom_line(mapping = aes(x = strike, y = implied_vol, group = trade_date, color = trade_date))
+# 
+# 
+# # log-strike, like a boss
+# ggplot(data = df_spy_time %&gt;% filter(trade_date &lt; as.Date(&quot;2013-09-01&quot;))) +
+#   geom_line(mapping = aes(x = log(strike/implied_forward), y = implied_vol, group = trade_date, color = trade_date))</code></pre>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
