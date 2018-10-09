@@ -14,3 +14,5 @@ title: "Slides"
 
 [06 - Options Part 3](slides_06_options_3.pdf)
 
+[07 - Options Part 4](slides_07_options_4.pdf)
+
