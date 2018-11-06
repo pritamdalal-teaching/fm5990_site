@@ -20,8 +20,6 @@ navbar:
       href: data.html
     - text: "Syllabus"
       href: syllabus.html
-    - text: "Q & A"
-      href: q_and_a.html
     - text: "Partners"
       href: partners.html
 output:
