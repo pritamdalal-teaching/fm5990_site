@@ -134,6 +134,7 @@ To reserve as spot, talk to me after class on Tuesday 10/9, or e-mail me.
 
 
 **Week 8 (10/23) - Delta Neutral Daily File**
+
 We apply our `dplyr` and `ggplot2` skills to analyze one of the Delta-Neutral EOD option pricing files.  It is these files, over many months and years, which form the foundation of our backtest data.
 
 *Assignment*
@@ -145,6 +146,7 @@ We apply our `dplyr` and `ggplot2` skills to analyze one of the Delta-Neutral EO
 
 
 **Week 9 (10/30) - Delta-Hedging and Option Replication**
+
 This week we focus on discussing the remaining options and derivatives material we will need for the course.
 
 *Assignment*
