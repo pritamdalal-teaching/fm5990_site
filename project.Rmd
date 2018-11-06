@@ -1,0 +1,16 @@
+---
+title: "Project"
+output: html_document
+---
+
+&nbsp;
+
+**Due Date:** Friday 11/30 by 12:00p.
+
+&nbsp;
+
+**Format:** A self-contained R Studio project that contains all the data (which you will be provided) and a Rmarkdown file which will contain the analysis - graphs, text, code, etc.
+
+&nbsp;
+
+**Materials:** I will have all the materials and instructions for your project up shortly.  You already did an initial assignment that was the data-wrangling portion of your project.  The next portion of the project is the fun part: analysis.
