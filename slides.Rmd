@@ -2,6 +2,9 @@
 title: "Slides"
 ---
 
+&nbsp;
+
+
 [01 - FM 5990 Preview](slides_01_fm_5990_preview.pdf)
 
 [02 - Installing R and RStudio](slides_02_installing_r_and_rstudio.pdf)
@@ -15,4 +18,9 @@ title: "Slides"
 [06 - Options Part 3](slides_06_options_3.pdf)
 
 [07 - Options Part 4](slides_07_options_4.pdf)
+
+[08 - Delta Hedging](slides_08_delta_hedging.pdf)
+
+[09 - Fall 2018 Data Set](slides_08_fall_2018_data_set.pdf)
+
 

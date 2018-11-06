@@ -1,44 +1,33 @@
 ---
-title: "Tutorials"
+title: "Tutorials and Exercises"
 output: html_document
 ---
 
 &nbsp;
 
-[04 Dataframe Slicing](tutorial_04_dataframe_slicing.R) - basic dataframe slicing techniques performed on `data_options_intro.csv` using base R.
+[All Tutorials and Exercises](fm5990_tutorials_and_exercises_20181106.zip) - this is an R Studio project that contains all the tutorials, exercises, and data sets that will be used in the class.
 
-[05 Volume Analysis with `dplyr`](tutorial_05_dplyr_volume_analysis.R) - an analysis of monthly volume by underlying performed on `data_occ_201808.csv` using the `dplyr` package from the tidyverse.
+*00 Introduction to R* - a first look at R.
 
-[06 Introduction to R Markdown](tutorial_06_r_markdown_introduction.Rmd) - this is a basic introduction to R Markdown.  For some reason the YAML header goes missing when I upload the file to the website.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
-```
----
-title: "Tutorial 06 - Introduction to R Markdown"
-author: "Pritam Dalal"
-output: html_document
----
-```
+*01 Console and Vectors* - R's interactive console and the simplest data structure - atomic vectors.
 
-[07 Functions and Iteration](tutorial_07_functions_and_iteration.Rmd) - In this tutorial we do some basic calculations on the *Option History Practice* data set in an R Markdown file.  Along the way we introduce functions and iterations.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
-```
----
-title: "Tutorial 07 - Functions and Interation"
-author: "Pritam Dalal"
-output: 
-  html_document:
-    df_print: paged
-editor_options: 
-  chunk_output_type: inline
----
-```
+*02 Matrices and For-Loops* - matrices and iteration with for-loops.
 
-[08 Data Visualization 1](tutorial_08_data_visualization_1_without_answers.Rmd) - this tutorial focuses on data visualization using the *Option History Practice* data.Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
-```
----
-title: "Tutorial 08 - Data Visualization 1"
-author: "Pritam Dalal"
-output: html_document
----
-```
+*03 The Tidyverse* - an introduction to the tidverse, which will provide most of the functions we need for our data analysis.
 
+*04 Dataframe Slicing* - basic dataframe slicing techniques performed on `options_intro.csv` using base R.
 
-[Tutorials Test](fm5990_tutorials_and_exercises.zip)
+*05 Volume Analysis with `dplyr`* - an analysis of monthly volume by underlying performed on `occ_201808.csv` using the `dplyr` package from the tidyverse.
+
+*06 Introduction to R Markdown* - this is a basic introduction to R Markdown, the foundation of many of R's authoring frameworks.  
+
+*07 Functions and Iteration* - In this tutorial we do some basic calculations on the *Option History Practice* data set in an R Markdown file.  Along the way we introduce functions and iteration.
+
+*08 Data Visualization 1* - this tutorial focuses on data visualization using the *Option History Practice* data.
+
+*09 Delta-Netural EOD File* - we put together our data manipulation and visualization skills to explore an end-of-day option file from our data partner Delta-Neutral.
+
+*10 Joining Data* - the `inner_join()` and `left_join()` functions of `dplyr`
+
+*11 `bizdays` and `fOptions`* - we explore two existing packages that are extremely useful when doing analysis with options data.
+
