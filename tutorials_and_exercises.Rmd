@@ -1,0 +1,44 @@
+---
+title: "Tutorials"
+output: html_document
+---
+
+&nbsp;
+
+[04 Dataframe Slicing](tutorial_04_dataframe_slicing.R) - basic dataframe slicing techniques performed on `data_options_intro.csv` using base R.
+
+[05 Volume Analysis with `dplyr`](tutorial_05_dplyr_volume_analysis.R) - an analysis of monthly volume by underlying performed on `data_occ_201808.csv` using the `dplyr` package from the tidyverse.
+
+[06 Introduction to R Markdown](tutorial_06_r_markdown_introduction.Rmd) - this is a basic introduction to R Markdown.  For some reason the YAML header goes missing when I upload the file to the website.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 06 - Introduction to R Markdown"
+author: "Pritam Dalal"
+output: html_document
+---
+```
+
+[07 Functions and Iteration](tutorial_07_functions_and_iteration.Rmd) - In this tutorial we do some basic calculations on the *Option History Practice* data set in an R Markdown file.  Along the way we introduce functions and iterations.  Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 07 - Functions and Interation"
+author: "Pritam Dalal"
+output: 
+  html_document:
+    df_print: paged
+editor_options: 
+  chunk_output_type: inline
+---
+```
+
+[08 Data Visualization 1](tutorial_08_data_visualization_1_without_answers.Rmd) - this tutorial focuses on data visualization using the *Option History Practice* data.Please insert the following chunk of code at the top of the file before you start working with it.  My apologies for the inconvenience, I will try to get this figured out.
+```
+---
+title: "Tutorial 08 - Data Visualization 1"
+author: "Pritam Dalal"
+output: html_document
+---
+```
+
+
+[Tutorials Test](fm5990_tutorials_and_exercises.zip)

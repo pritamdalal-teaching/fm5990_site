@@ -10,8 +10,8 @@ navbar:
       href: instructor.html
     - text: "Weekly Plan"
       href: weekly_plan.html
-    - text: "Tutorials"
-      href: tutorials.html
+    - text: "Tutorials & Exercises"
+      href: tutorials_and_exercises.html
     - text: "Slides"
       href: slides.html
     - text: "Self-Study"

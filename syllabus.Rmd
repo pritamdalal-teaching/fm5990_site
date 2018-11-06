@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 &nbsp;
 
 ### Course Overview
-The purpose of this course is to introduce the R programming languages as a computing tool for data science. This is a class for the Master of Financial Mathematics program; therefore, all in-class examples and homework assignments will involve financial data.
+The purpose of this course is to introduce the R programming language as a computing tool for data science. This is a class for the Master of Financial Mathematics program; therefore, all in-class examples and homework assignments will involve financial data.
 
 I will teach the course assuming that that students have no programming background. However, this course is not intended to be a proper introduction to programming.  Instread, I will introduce programming topics as they are needed to perform analysis.
 
