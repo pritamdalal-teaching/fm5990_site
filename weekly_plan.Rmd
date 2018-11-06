@@ -11,9 +11,8 @@ This will serve as a rough guide for the course schedule.  I reserve right to ch
 
 &nbsp;
 
-### Part 1: R & RStudio
 
-**Week 1 - Preliminaries**
+**Week 1 (9/4) Preliminaries**
 
 We'll do the usual first class housekeeping including walking though the syllabus.  We'll also make sure that everyone has R & R Studio installed.  After that, we'll start discussing material material: files, directories, paths, touch-typing, keyboard shortcuts, vectors, dataframes, reading in data from a CSV, dataframe slicing.  We'll end the class by introducing options contracts.
 
@@ -30,7 +29,7 @@ http://swcarpentry.github.io/git-novice/
 
 &nbsp;
 
-**Week 2 - Data Manipulation (1 of 2)** 
+**Week 2 (9/11) - Data Manipulation (1 of 2)** 
 
 This week will be focused on gaining proficiency the data manipulation functions of the tidyverse `dplyr` package.  Towards this end we will perform an analysis on volume data published by the OCC.  The `dplyr` functions that we cover are: `filter()`, `arrange()`, `select()`, `mutate()`, `groupby()`, `summarize()`.  We learn how to create elegant sequences of dplyr functions using the pipe operator.  To end the class we will continue our discussion of options.
 
@@ -52,7 +51,7 @@ This week will be focused on gaining proficiency the data manipulation functions
 &nbsp;
 
 
-**Week 3 - Data Manipulation (2 of 2)** 
+**Week 3 (9/18) - Data Manipulation (2 of 2)** 
 
 This week we started by going over the Options Part 3 Slides, the discussion took longer that I anticipated but there was a lot of interest from the students in digging deeper into the finance material.  We ended the class by going over the dplyr tutorial again from start to finish, but only focusing on the essentials.  
 
@@ -74,7 +73,7 @@ This week we started by going over the Options Part 3 Slides, the discussion too
 
 
 
-**Week 4 - R Markdown**   
+**Week 4 (9/25) - R Markdown**   
 
 First I'd like to get a sense of how the reading assignments and programming exercises are going for the students.  Then we'll introduce the concept of R Markdown, which is the backbone of R's extensive authoring capabilities. To end the class we'll explore the *Options History Practice* within an `.Rmd` notebook.  
 
@@ -87,7 +86,7 @@ First I'd like to get a sense of how the reading assignments and programming exe
 &nbsp;
 
 
-**Week 5 - Functions and Iteration**   
+**Week 5 (10/2) - Functions and Iteration**   
 
 You now have a bit of experience performing data analysis in the form of single scripts written in `.R` file.  This week we will continue our use of R Markdown (`.Rmd`) files as we further explore the Practice Option Data.  Along the way we will discuss iteration and functions and iteration.
 
@@ -102,7 +101,7 @@ You now have a bit of experience performing data analysis in the form of single 
 
 &nbsp;
 
-**Week 6 - Data Visualization 1** 
+**Week 6 (10/9) - Data Visualization** 
 
 Data Visualization with ggplot2().  An introduction to some of the most popular finance related packages on CRAN.  Discuss how to explore packages on your own and other self-study resources.
 
@@ -118,19 +117,10 @@ Data Visualization with ggplot2().  An introduction to some of the most popular 
 
 &nbsp;
 
-**Week 7 - NO CLASS - Meeting with Groups Individually**
+**Week 7 (10/16) - NO CLASS - Meeting with Groups Individually**
 
 There will not be regular class on this day.  Rather, I am going to meet with groups individually to discuss the projects.  The purpose of this meeting is for me to clearly articulate the project to you, and for me to assess where the students are in their understanding of the skills needed to complete the projects.  
 
-Here are three available slots on Tuesday 10/16 in Vincent 364:
-
-- 400p-450p
-
-- 500p-550p
-
-- 600p-650p
-
-- 700p-750p
 
 To reserve as spot, talk to me after class on Tuesday 10/9, or e-mail me.
 
@@ -138,16 +128,66 @@ To reserve as spot, talk to me after class on Tuesday 10/9, or e-mail me.
 
 - Continue working the Boehmke's visualization tutorials.
 
-- Working on projects.
+- Working on initial assignment for projects.
 
 &nbsp;
 
 
-**Week 8 - Data Visualization 2**
+**Week 8 (10/23) - Delta Neutral Daily File**
+We apply our `dplyr` and `ggplot2` skills to analyze one of the Delta-Neutral EOD option pricing files.  It is these files, over many months and years, which form the foundation of our backtest data.
+
+*Assignment*
+
+- Work on initial assignment for projects.
+
+
+&nbsp;
+
+
+**Week 9 (10/30) - Delta-Hedging and Option Replication**
+This week we focus on discussing the remaining options and derivatives material we will need for the course.
+
+*Assignment*
+
+- Work on initial assignment for projects.
 
 
 
+&nbsp;
 
 
+**Week 10 (11/6) - Joining Data**
 
+It is often the case that you will have to combine together the data from multiple data sources. We discuss two of the `dplyr` functions that help you do this, namely `left_join()` and `inner_join()`.  
+
+*Assignment:*
+
+- Read and work through chapter 13 (Relational Data) or *R4DS*.
+
+- I will send you the final project data with instructions, so start taking a look at that.
+
+
+&nbsp;
+
+  
+**Week 11 (11/13) - Demonstration Analysis**
+
+I will demonstrate the type of analysis that can be performed with the data.  This is meant to give you an idea of how to proceed with your own analysis.  We will also discuss the `bizdays` and `fOptions` packages.
+
+
+&nbsp;
+
+**Week 12 (11/20) - TBD**
+
+&nbsp;
+
+**Week 13 (11/27) - TBD**
+
+&nbsp;
+
+**Week 14 (12/4) - Install Python**
+
+&nbsp;
+
+**Week 15 (12/11) - Getting Started with Python**
 
