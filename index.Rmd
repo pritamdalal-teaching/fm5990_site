@@ -6,15 +6,12 @@ This is the website for FM 5990 - Fall 2018.
 
 We meet Tuesdays 5:30p-7:10p at Vincent 364.
 
-This site is a work in progress - thank you in advance for your patience.
-
 &nbsp;
 
 #### Announcements
 
 
 ##### 11/6/2018
-- Website is back up and running!  Thank you for your patience!
 
 - Updated the *Tutorials & Exercises* section so now you can download everything at once in a single R Studio project.
 
