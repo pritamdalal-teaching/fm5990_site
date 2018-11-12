@@ -11,6 +11,9 @@ We meet Tuesdays 5:30p-7:10p at Vincent 364.
 #### Announcements
 
 
+##### 11/11/2018
+- Instructions have been added to the *Project* page.  You can download the starter Rstudio project from the Google Drive folder.
+
 ##### 11/6/2018
 
 - Updated the *Tutorials & Exercises* section so now you can download everything at once in a single R Studio project.

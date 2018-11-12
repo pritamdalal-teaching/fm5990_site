@@ -68,7 +68,7 @@ df_pnl <-
 df_pnl <- 
   df_pnl %>% mutate(daily = dly_opt_pnl * strangle_unity_mult)
 
-# adding a scaled PNL column
+# adding ttd pnl column for the three strategies and plotting
 df_pnl  %>%  
   group_by(variation, trade_date) %>% # group all pnls by variation and day
   arrange(variation, trade_date) %>%  

@@ -18,8 +18,6 @@ navbar:
       href: slides.html
     - text: "Self-Study"
       href: self_study.html
-    - text: "Data"
-      href: data.html
     - text: "Syllabus"
       href: syllabus.html
     - text: "Partners"

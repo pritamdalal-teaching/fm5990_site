@@ -203,9 +203,6 @@ $(document).ready(function () {
   <a href="self_study.html">Self-Study</a>
 </li>
 <li>
-  <a href="data.html">Data</a>
-</li>
-<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
 <li>
@@ -274,7 +271,7 @@ df_pnl &lt;-
 df_pnl &lt;- 
   df_pnl %&gt;% mutate(daily = dly_opt_pnl * strangle_unity_mult)
 
-# adding a scaled PNL column
+# adding ttd pnl column for the three strategies and plotting
 df_pnl  %&gt;%  
   group_by(variation, trade_date) %&gt;% # group all pnls by variation and day
   arrange(variation, trade_date) %&gt;%  

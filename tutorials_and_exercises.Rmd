@@ -5,7 +5,11 @@ output: html_document
 
 &nbsp;
 
-[All Tutorials and Exercises](fm5990_tutorials_and_exercises_20181106.zip) - this is an R Studio project that contains all the tutorials, exercises, and data sets that will be used in the class.
+[All Tutorials and Exercises](fm5990_tutorials_and_exercises_20181112.zip) - this is an R Studio project that contains all the tutorials, exercises, and data sets that will be used in the class.
+
+&nbsp;
+
+#### Tutorials
 
 *00 Introduction to R* - a first look at R.
 
@@ -31,3 +35,6 @@ output: html_document
 
 *11 `bizdays` and `fOptions`* - we explore two existing packages that are extremely useful when doing analysis with options data.
 
+&nbsp;
+
+#### Exercises
