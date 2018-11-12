@@ -229,11 +229,61 @@ $(document).ready(function () {
 
 
 <p> </p>
+<div id="project-parameters" class="section level3">
+<h3>Project Parameters</h3>
 <p><strong>Due Date:</strong> Friday 11/30 by 12:00p.</p>
+<p><strong>Format:</strong> What you turn in to me should be a self-contained R Studio project that contains all the data (which you will be provided) and a Rmarkdown file which will contain the analysis: sentences, graphs, etc. All graphs and tables should be properly labeled.</p>
+<p><strong>Starting Project:</strong> This Rstudio project will serve as the starting point for your analysis. I suspect that most groups will simply add an Rmarkdown file to this project. Please add any data files that you generate to the <code>data</code> subdirectory.</p>
+<p>I have included my wrangling related code, as well as a variety of intermediate data files. This is in case I have to reference those files over the course of this assignment. Most groups will find no reason to touch a lot of the data, and a lot of the columns that are in the data files. It will be good practice for you to “cut through the noise” to focus in on just what is relevant to your analysis.</p>
 <p> </p>
-<p><strong>Format:</strong> A self-contained R Studio project that contains all the data (which you will be provided) and a Rmarkdown file which will contain the analysis - graphs, text, code, etc.</p>
-<p> </p>
-<p><strong>Materials:</strong> I will have all the materials and instructions for your project up shortly. You already did an initial assignment that was the data-wrangling portion of your project. The next portion of the project is the fun part: analysis.</p>
+</div>
+<div id="backtest-parameters" class="section level3">
+<h3>Backtest Parameters</h3>
+<p><strong>Strategy and Variations:</strong> All groups will backtest three variations of the same strategy: <em>selling a strangle in each underlying every month</em>. The three varitions will be the moniness (delta) of the strangles: 50%, 30%, 10%.</p>
+<p><strong>Dates/Expirations:</strong> The backtest will include a total of 19 expirations: January 2017 - July 2018. The dates of the backtest will be 12/16/2016 - 7/20/2018. The expirations, along with their associated execution dates can be found in <code>project_expiration.csv</code>.</p>
+<p><strong>Underlyings:</strong> There is data for 50 ETF underlyings included in the data set. You must include at least 20 underlyings in your analysis. The list of underlyings can be found in <code>project_underlying.csv</code>.</p>
+<p><strong>Trades:</strong> The trades have already been calculated for <code>project_trade_master.csv</code>. (This was the first part of your initial assignment, albeit for a different time period.)</p>
+<p><strong>PNLs:</strong> The PNLs for the trades have already been calculated for you and can be found in <code>project_strangle_pnl.csv</code>. (This was the second part of your initial assignment, albeit for a different time period.) There are a variety of pnl related columns in this dataset; the only ones that you need to worry about are <code>dly_opt_pnl</code>, <code>ttd_opt_pnl</code>, and <code>strangle_unity_mult</code>.</p>
+<p><strong>Position Size Scaling:</strong> The prices of our underlyings vary considerably, and therefore so do the prices of their options. For the backtest, I wanted each strangle for each underlying to be approximately the same size. In particular, I created a position scaling method that would make each strangle sale to result in about $0.90 in premium. Position scaling data is stored in <code>project_position_scaling.csv</code>.</p>
+<p>Here is some code to see the min, max, and average premium, sold for each variation, for all 50 underlyings.</p>
+<pre class="r"><code># reading in the data
+df_position_scaling &lt;- 
+  read_csv(&quot;project_position_scaling.csv&quot;, col_types = cols())
+
+# avg, min, and max premium sold for each variation
+df_position_scaling %&gt;% 
+  group_by(variation) %&gt;% 
+  summarize(
+    avg_prem = mean(strangle_prem_sold)
+    , min_prem = min(strangle_prem_sold)
+    , max_prem = max(strangle_prem_sold)
+  )</code></pre>
+<pre><code>## # A tibble: 3 x 4
+##   variation avg_prem min_prem max_prem
+##       &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;
+## 1       0.1    0.800    0.176    0.991
+## 2       0.3    0.921    0.621    0.997
+## 3       0.5    0.942    0.537    0.998</code></pre>
+<p><strong>Calculating TTD PNL:</strong> The <code>strangle_unity_mult</code> factor is what affects the position rescaling. Here is an example query that demonstrates how to calculate the cummulative PNL for each variation, and then graph it with <code>ggplot2()</code>.</p>
+<!-- fig.height = 4.5, fig.width=6.67, out.width="100%" -->
+<pre class="r"><code># reading in the data  
+df_pnl &lt;- 
+    read_csv(&quot;project_strangle_pnl.csv&quot;, col_types = cols())
+
+# adding a scaled PNL column, 
+df_pnl &lt;- 
+  df_pnl %&gt;% mutate(daily = dly_opt_pnl * strangle_unity_mult)
+
+# adding a scaled PNL column
+df_pnl  %&gt;%  
+  group_by(variation, trade_date) %&gt;% # group all pnls by variation and day
+  arrange(variation, trade_date) %&gt;%  
+  summarize(daily = sum(daily)) %&gt;% # adding all daily pnls for all trades  
+  mutate(ttd = cumsum(daily)) %&gt;%  
+  ggplot() +
+    geom_line(aes(x = trade_date, y = ttd, color = factor(variation)))</code></pre>
+<p><img src="project_files/figure-html/unnamed-chunk-3-1.png" width="100%" /></p>
+</div>
 
 
 
