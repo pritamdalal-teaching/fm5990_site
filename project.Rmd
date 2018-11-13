@@ -59,7 +59,7 @@ df_position_scaling %>%
 **Calculating TTD PNL:** The `strangle_unity_mult` factor is what affects the position rescaling.  Here is an example query that demonstrates how to calculate the cummulative PNL for each variation, and then graph it with `ggplot2()`.
 
 <!-- fig.height = 4.5, fig.width=6.67, out.width="100%" -->
-```{r, out.width="100%"}
+```{r, fig.height = 5, fig.width = 10}
 # reading in the data  
 df_pnl <- 
     read_csv("project_strangle_pnl.csv", col_types = cols())
