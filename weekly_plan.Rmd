@@ -181,15 +181,40 @@ I will demonstrate the type of analysis that can be performed with the data.  Th
 
 **Week 12 (11/20) - TBD**
 
+The *Snowmen* have kindly agreed to present their analysis to the class.  We will also discuss the process of 
+
+*Assignment:*
+
+- Read [Getting Started with R Packages](https://www.datacamp.com/community/tutorials/r-packages-guide)
+
+- Start exploring the [`tidyquant`](https://cran.r-project.org/web/packages/tidyquant/index.html). Skim over the vignettes and documentation.  This is a very useful package.
+
+
 &nbsp;
 
+
 **Week 13 (11/27) - TBD**
+
+This will be a light week because I want to leave you plenty of mental bandwith. We have another group presenting this week, so we will start with that.  After that I'll just have a Q\&A for the projects, and we can end early if there isn't too much to talk about.
+
+*Assignment:*
+- Do an amazing job on your projects and make sure to turn them in by Friday 11/30, 12p (noon).
+
+- Install the [Anaconda](https://www.anaconda.com/download/#macos) distribution.  This includes most of the related programs that we will need.
+
+- Install the [PyCharm IDE](https://www.jetbrains.com/pycharm/download/#section=mac).  Everything we do this semester will be in Jupyter notebooks, which comes automatically with Anaconda, but next semester this is most likely the IDE we are going to use.
 
 &nbsp;
 
 **Week 14 (12/4) - Install Python**
+I will help anyone who is struggling to get Anaconda installed on their machine.  Then we will jump into some Jupyter based Python tutorials - I am recreating all my R tutorial in Jupyter notebooks, and we are going to start working through them.
 
 &nbsp;
 
 **Week 15 (12/11) - Getting Started with Python**
+We will continue working through Jupyter tutorials.
 
+
+*Assignment*
+
+- Master Python over the winter break, so next semester we can just hangout. :-)

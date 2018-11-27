@@ -23,4 +23,6 @@ title: "Slides"
 
 [09 - Project Data Set](slides/slides_09_fall_2018_data_set.pdf)
 
+[10 - Package Exploration](slides/slides_10_package_exploration.pdf)
+
 
