@@ -17,9 +17,13 @@ Here are some self-study resources for you to explore.
 
 [R Packages - Hadley Wickham](http://r-pkgs.had.co.nz/)
 
-[Data Wrangleing with R - Bradley Boehmke](http://bradleyboehmke.github.io/books/)
+[Data Wrangling with R - Bradley Boehmke](http://bradleyboehmke.github.io/books/)
 
 [R Markdown: The Definitive Guide - Yihui Xie](https://bookdown.org/yihui/rmarkdown/)
+
+[Data Wrangling with R - Claudia Engel](https://cengel.github.io/R-data-wrangling/)
+
+[ggplot2 - Hadley Wickham](pdf_wickham_ggplot2.pdf) 
 
 &nbsp;
 
