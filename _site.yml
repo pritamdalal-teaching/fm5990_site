@@ -4,8 +4,6 @@ output_dir: "."
 navbar:
   title: "FM 5990"
   left:
-    - text: "Home"
-      href: index.html
     - text: "Instructor"
       href: instructor.html
     - text: "Weekly Plan"

@@ -207,11 +207,13 @@ This will be a light week because I want to leave you plenty of mental bandwith.
 &nbsp;
 
 **Week 14 (12/4) - Install Python**
+
 I will help anyone who is struggling to get Anaconda installed on their machine.  Then we will jump into some Jupyter based Python tutorials - I am recreating all my R tutorial in Jupyter notebooks, and we are going to start working through them.
 
 &nbsp;
 
 **Week 15 (12/11) - Getting Started with Python**
+
 We will continue working through Jupyter tutorials.
 
 

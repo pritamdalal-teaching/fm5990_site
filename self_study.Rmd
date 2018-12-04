@@ -25,6 +25,8 @@ Here are some self-study resources for you to explore.
 
 [ggplot2 - Hadley Wickham](pdf_wickham_ggplot2.pdf) 
 
+
+
 &nbsp;
 
 #### Tutorials
@@ -32,6 +34,8 @@ Here are some self-study resources for you to explore.
 [Jenny Bryan's Purr Tutorial](https://jennybc.github.io/purrr-tutorial/)
 
 [Hadley Wickham's List Tutorial](http://r4ds.had.co.nz/lists.html)
+
+
 
 
 &nbsp;
@@ -79,3 +83,14 @@ R has many tools to facilitate written communication.  You can write PDF article
 [Hillary Parker](https://hilaryparker.com/about-hilary-parker/)  -- she is a data scienctist at Stich Fix and also co-hosts the *Not So Standard Deviations Podcast* with Roger Peng. 
 
 [Bradley Bohmke](http://bradleyboehmke.github.io/courses/) -- his content is awesome and he has great style.  Also checkout his course website at the University of Cinncinati: http://uc-r.github.io/
+
+&nbsp;
+
+#### Python
+
+[Python for Data Analysis](Python-for-Data-Analysis.pdf)
+
+[Automate the Boring Stuff](https://automatetheboringstuff.com/)
+
+[Official Python Tutorial](https://docs.python.org/3/tutorial/)
+
