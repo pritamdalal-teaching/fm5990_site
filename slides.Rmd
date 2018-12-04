@@ -25,4 +25,6 @@ title: "Slides"
 
 [10 - Package Exploration](slides/slides_10_package_exploration.pdf)
 
+[11 - Python Introduction](slides/slides_11_python_intro.pdf)
+
 
