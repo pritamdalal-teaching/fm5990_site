@@ -38,3 +38,9 @@ output: html_document
 &nbsp;
 
 #### Exercises
+
+&nbsp;
+
+#### Python Tutorials
+
+[Python Tutorials](fm5990_python_tutorials_and_exercises_20181204.zip) - this is a zip folder that contains Python tutorials that we will be using this semester.
