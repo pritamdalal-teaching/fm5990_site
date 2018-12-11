@@ -27,4 +27,6 @@ title: "Slides"
 
 [11 - Python Introduction](slides/slides_11_python_intro.pdf)
 
+[12 - Self-Study](slides/slides_11_python_intro.pdf)
+
 
